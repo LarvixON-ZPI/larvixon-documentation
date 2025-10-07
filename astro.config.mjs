@@ -14,7 +14,8 @@ export default defineConfig({
     // @ts-expect-error ??????
     remarkPlugins: [remarkHeadingId, mermaidRemarkPlugin],
   },
-  site: "https://docs.solvro.pl",
+  ite: "https://larvixon-zpi.github.io",
+  base: "/larvixon-documentation",
   integrations: [
     liveCode({
       defaultProps: {
@@ -35,7 +36,7 @@ export default defineConfig({
         },
       },
       favicon: "favicon.ico",
-      title: "Solvro",
+      title: "LarvixON-ZPI",
       customCss: ["./src/tailwind.css"],
       tableOfContents: true,
       logo: {
