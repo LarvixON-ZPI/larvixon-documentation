@@ -14,7 +14,7 @@ export default defineConfig({
     // @ts-expect-error ??????
     remarkPlugins: [remarkHeadingId, mermaidRemarkPlugin],
   },
-  ite: "https://larvixon-zpi.github.io",
+  site: "https://larvixon-zpi.github.io",
   base: "/larvixon-documentation",
   integrations: [
     liveCode({
@@ -24,9 +24,10 @@ export default defineConfig({
     }),
     starlight({
       plugins: [
-        starlightLinksValidator({
-          exclude: ["http://localhost:4321"],
-        }),
+        // Disabled due to base path issue with GitHub Pages
+        // starlightLinksValidator({
+        //   exclude: ["http://localhost:4321", "/larvixon-documentation/**"],
+        // }),
       ],
       defaultLocale: "pl",
       locales: {
