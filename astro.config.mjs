@@ -73,7 +73,7 @@ export default defineConfig({
           label: "Zacznij tu!",
           items: [
             {
-              label: "Gdzie zacząć?",
+              label: "Project LarvixON-ZPI",
               link: "/",
             },
             {
@@ -83,33 +83,8 @@ export default defineConfig({
           ],
         },
         {
-          label: "Git i GitHub",
-          items: [
-            {
-              label: "Poradnik wstępny",
-              autogenerate: { directory: "/git-github/intro", collapsed: true },
-            },
-            {
-              label: "Zasady działania z Git i Github w Solvro",
-              link: "/git-github/solvro",
-            },
-            {
-              label: "Github Projects - zarządzanie projektami",
-              link: "/git-github/github-projects",
-            },
-          ],
-        },
-        {
-          label: "Solvro",
-          autogenerate: { directory: "solvro", collapsed: true },
-        },
-        {
-          label: "Sekcje",
-          autogenerate: { directory: "sections", collapsed: true },
-        },
-        {
-          label: "Projekty",
-          autogenerate: { directory: "projects", collapsed: true },
+          label: "Projekt",
+          autogenerate: { directory: "project", collapsed: true },
         },
       ],
     }),

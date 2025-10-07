@@ -1,6 +1,6 @@
 ---
-title: Gdzie zacząć?
-description: Pierwsze kroki w dokumentacji Solvro
+title: LarvixON AI - Dokumentacja Projektu
+description: System szybkiej diagnostyki toksyczności osocza z wykorzystaniem analizy behawioralnej larw i algorytmów uczenia maszynowego
 ---
 
 import {
@@ -11,51 +11,81 @@ import {
   Aside,
 } from "@astrojs/starlight/components";
 
-## Cześć 👋
+## Witamy w dokumentacji LarvixON AI 🦋
 
-Miło nam Cię powitać w otwartej dokumentacji organizacyjnej KN Solvro. Jest to miejsce, gdzie przechowujemy lata rozwoju naszej organizacji, zarówno od strony zarządczej jak i technicznej. Możesz znaleźć tu sprawozdania, procesy, poradniki i instrukcje dotyczące działalności Koła Naukowego Solvro.
+**Politechnika Wrocławska**  
+**Wydział Informatyki i Telekomunikacji**  
+Kierunek: IST  
+**Zespołowe Przedsięwzięcie Informatyczne**
 
-### Dla gości
+System LarvixON AI to nowatorskie rozwiązanie diagnostyczne wykorzystujące sztuczną inteligencję do wykrywania ksenobiotyków w osoczu pacjentów poprzez analizę wzorców ruchowych larw _Galleria mellonella_.
 
-<LinkCard title="Nasza oficjalna strona" href="https://solvro.pwr.edu.pl" />
-<LinkCard title="Strategia KN Solvro" href="/solvro/strategy" />
-<LinkCard title="Obecny zarząd" href="/solvro/vii_board" />
-<LinkCard title="Historia" href="/solvro/history" />
+<Aside type="tip">
+  Celem projektu jest osiągnięcie wysokiej czułości i specyficzności
+  klasyfikacji przy czasie analizy nieprzekraczającym **20 minut**.
+</Aside>
 
-### Dla nowych członków
-
-<LinkCard title="Jak pracujemy" href="/solvro/structure" />
-<LinkCard title="Komunikacja" href="/communication" />
-<LinkCard title="GitHub" href="/git-github/intro/1-intro/" />
-
-### Dla starych wyjadaczy
-
-<LinkCard
-  title="Prowadzenie projektów"
-  href="/sections/management/guides/managing-projects/"
-/>
-
-## Nasza działalność
-
-Nasze codzienne działanie skupia się na nabywaniu umiejętności twardych w poszczególnych sekcjach technicznych, które potem przekładamy na praktyczne projekty napędzające innowację na Politechnice Wrocławskiej.
+## Szybki start
 
 <CardGrid>
-### Sekcje
-
-### Projekty
-
-  <LinkCard title="Frontend" href="/sections/frontend/"  />
-  <LinkCard title="ToPWR" href="/projects/topwr/handbook/" />
-  <LinkCard title="Backend" href="/sections/backend/get-started" />
-  <LinkCard title="Eventownik" href="/projects/eventownik/handbook/" />
+  <LinkCard
+    title="Opis projektu"
+    href="/project/overview/"
+    description="Poznaj cele i zakres projektu"
+  />
+  <LinkCard
+    title="Technologie"
+    href="/project/technologies/"
+    description="Stack technologiczny i narzędzia"
+  />
+  <LinkCard
+    title="Roadmapa"
+    href="/project/roadmap/"
+    description="Plan i kamienie milowe projektu"
+  />
+  <LinkCard
+    title="Zespół"
+    href="/project/team/"
+    description="Członkowie zespołu i opiekun"
+  />
 </CardGrid>
 
-Jest to tylko część naszej działalności, gdzie w rzeczywistości działamy w wielu obszarach jednocześnie.
+## O projekcie
+
+Projekt LarvixON AI opracowuje szybki system diagnostyczny oparty na AI, który analizuje wzorce ruchowe larw w celu identyfikacji charakterystycznych reakcji organizmu na toksyczne substancje. System łączy:
+
+- 🔬 **Badania naukowe** - analiza danych ruchowych i ekstrakcja cech behawioralnych
+- 💻 **Inżynieria oprogramowania** - aplikacja diagnostyczna z pełnym pipeline
+- 🤖 **Uczenie maszynowe** - modele klasyfikacyjne do wykrywania ksenobiotyków
+- 🏥 **Zastosowania medyczne** - wsparcie diagnostyczne w czasie rzeczywistym
+
+## Główne komponenty
+
+<CardGrid>
+  <Card title="Backend (Django)" icon="seti:django">
+    Skalowalny backend z API REST, zarządzanie danymi i logika biznesowa
+  </Card>
+  <Card title="Frontend (Flutter)" icon="seti:flutter">
+    Wieloplatformowy interfejs użytkownika dla lekarzy i laborantów
+  </Card>
+  <Card title="Model ML (Python)" icon="seti:python">
+    Algorytmy uczenia maszynowego do analizy wzorców behawioralnych
+  </Card>
+  <Card title="Symulacja (Unity)" icon="seti:unity">
+    Generowanie syntetycznych danych treningowych
+  </Card>
+</CardGrid>
+
+## Infrastruktura
+
+- **Wrocławskie Centrum Superkomputerowe (WCSS)** - moc obliczeniowa dla ML
+- **PostgreSQL** - baza danych systemu
+- **Docker** - konteneryzacja aplikacji
+- **Microsoft Azure** - hosting i usługi chmurowe
+- **Roboflow** - anotacja danych wideo
+
+## Status projektu
+
+Projekt jest obecnie w **Fazie III: Integracja i Optymalizacja** (październik 2025). Trwają prace nad połączeniem wszystkich komponentów systemu oraz optymalizacją modeli uczenia maszynowego na rzeczywistych danych.
 
 ![](./../../assets/solvro/what-we-do.png)
-
-## Jak dołożyć cegiełkę do dokumentacji?
-
-Nasza dokumentacja jest otwarta na wszelkie sugestie. Widzisz błąd? Chcesz coś zmienić lub dodać? A może masz pomysł na nowy materiał? Nie czekaj! Wszystkie potrzebne informacje znajdziesz w [poradniku pisania dokumentacji](/projects/dokumentacja-solvro).
-
-**Zapraszamy również do kontaktu przez naszą [stronę](https://solvro.pwr.edu.pl/contact) lub [maila](mailto:kn.solvro@pwr.edu.pl) 🚀**
