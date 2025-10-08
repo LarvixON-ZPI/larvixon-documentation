@@ -1,5 +1,9 @@
 # Larvixon docs
 
+This is the documentation for the LarvixON AI project.
+
+It is practically a fork of the great [Solvro docs](https://github.com/solvro/web-solvro-docs).
+
 ## FAQ
 
 - How to add a new site?

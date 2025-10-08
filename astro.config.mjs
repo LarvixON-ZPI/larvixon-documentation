@@ -5,7 +5,6 @@ import remarkHeadingId from "remark-heading-id";
 import tailwind from "@astrojs/tailwind";
 import liveCode from "astro-live-code";
 import react from "@astrojs/react";
-import starlightLinksValidator from "starlight-links-validator";
 import { mermaidRemarkPlugin } from "./src/plugins/mermaid";
 
 // https://astro.build/config
@@ -29,11 +28,11 @@ export default defineConfig({
         //   exclude: ["http://localhost:4321", "/larvixon-documentation/**"],
         // }),
       ],
-      defaultLocale: "pl",
+      defaultLocale: "en",
       locales: {
         root: {
-          label: "Polski",
-          lang: "pl",
+          label: "English",
+          lang: "en",
         },
       },
       favicon: "favicon.ico",
@@ -46,33 +45,20 @@ export default defineConfig({
         replacesTitle: true,
       },
       lastUpdated: true,
-      head: [
-        {
-          tag: "script",
-          attrs: {
-            src: "https://analytics.solvro.pl/script.js",
-            "data-website-id": "8d083e9b-5ad6-4abb-b9b2-4c855adb18b0",
-            defer: true,
-            "data-domains": "docs.solvro.pl",
-          },
-        },
-      ],
       components: {
         Head: "./src/overrides/Head.astro",
         SocialIcons: "./src/overrides/SocialIcons.astro",
       },
       social: {
-        email: "mailto:kn.solvro@pwr.edu.pl",
-        facebook: "https://www.facebook.com/knsolvro",
-        github: "https://github.com/solvro/web-solvro-docs",
-        linkedin: "https://www.linkedin.com/company/knsolvro",
+        email: "mailto:272662@pwr.edu.pl",
+        github: "https://github.com/LarvixON-ZPI",
       },
       editLink: {
-        baseUrl: "https://github.com/Solvro/web-solvro-docs/edit/main/",
+        baseUrl: "https://github.com/LarvixON-ZPI/larvixon-documentation",
       },
       sidebar: [
         {
-          label: "Zacznij tu!",
+          label: "Start here!",
           items: [
             {
               label: "Project LarvixON-ZPI",
@@ -85,7 +71,7 @@ export default defineConfig({
           ],
         },
         {
-          label: "Projekt",
+          label: "Project",
           autogenerate: { directory: "project", collapsed: true },
         },
       ],
