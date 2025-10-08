@@ -1,326 +1,326 @@
 ---
-title: Roadmapa projektu
-description: Harmonogram i kamienie milowe projektu LarvixON AI (2025)
+title: Project roadmap
+description: Timeline and milestones for the LarvixON AI project (2025)
 ---
 
-Projekt realizowany jest w **trzech głównych fazach** od czerwca do października 2025 roku. Każda faza koncentruje się na różnych aspektach systemu, od fundamentów po pełną integrację i optymalizację.
-
----
-
-## 📅 Przegląd czasowy
-
-| Faza         | Okres              | Status     |
-| ------------ | ------------------ | ---------- |
-| **Faza I**   | 15.06 - 13.09.2025 | Zakończona |
-| **Faza II**  | 20.09 - 30.09.2025 | Zakończona |
-| **Faza III** | 05.10 - 31.10.2025 | W trakcie  |
+Project is carried out in three main phases from June to December 2025. Each phase focuses on different aspects of the system, from foundations to full integration and optimization.
 
 ---
 
-## 🏗️ Faza I: Fundamenty, struktura i przygotowanie danych
+## Timeline overview
 
-**Okres:** 15 czerwca - 13 września 2025
+| phase     | period             | status      |
+| --------- | ------------------ | ----------- |
+| phase I   | 15.06 - 13.09.2025 | completed   |
+| phase II  | 20.09 - 30.09.2025 | completed   |
+| phase III | 05.10 - 31.10.2025 | in progress |
 
-### Cele główne
+---
 
-- Stworzenie solidnych fundamentów projektu
-- Przygotowanie infrastruktury rozwojowej
-- Zebranie i przygotowanie danych treningowych
+## Phase I: foundations, structure and data preparation
 
-### Kamienie milowe
+**Period:** 15 June - 13 September 2025
 
-#### 📊 15.06.2025: Finalizacja zbioru danych
+### Main goals
 
-**Status:** ✅ Zakończono
+- Establish a solid project foundation
+- Prepare the development infrastructure
+- Collect and prepare training data
 
-- Zebranie nagrań wideo larw _Galleria mellonella_
-- Wstępne oczyszczenie danych
-- Adnotacja w Roboflow
-- Przygotowanie pierwszych zestawów treningowych
+### Milestones
 
-#### 🗂️ 16.08.2025: Utworzenie repozytoriów i plan MVP
+#### 15.06.2025: data collection finalized
 
-**Status:** ✅ Zakończono
+Status: completed
 
-- Utworzenie wszystkich repozytoriów projektu
+- Collection of video recordings of Galleria mellonella larvae
+- Initial data cleaning
+- Annotation in Roboflow
+- Preparation of first training sets
+
+#### 16.08.2025: repository creation and MVP plan
+
+Status: completed
+
+- creation of all project repositories:
   - Backend (Django)
   - Frontend (Flutter)
   - ML Models (Python)
   - Simulation (Unity)
   - Documentation
-- Zdefiniowanie MVP (Minimum Viable Product)
-- Rozpoczęcie I iteracji rozwojowej
+- definition of the MVP (minimum viable product)
+- start of the first development iteration
 
-#### 🔐 04.09.2025: System uwierzytelniania (Backend)
+#### 04.09.2025: authentication system (backend)
 
-**Status:** ✅ Zakończono
+Status: completed
 
-**Zaimplementowano:**
+Implemented:
 
-- Logowanie użytkowników
-- Rejestracja nowych kont
-- Multi-Factor Authentication (MFA)
-- Logowanie przez Google (OAuth 2.0)
-- Zarządzanie sesjami
+- User login
+- New account registration
+- Multi-factor authentication (MFA)
+- Google login (OAuth 2.0)
+- Session management
 - Token-based authentication
 
-#### 🎮 04.09.2025: Symulacja - wersja do recenzji
+#### 04.09.2025: simulation — review version
 
-**Status:** ✅ Zakończono
+Status: completed
 
-- Pierwsza działająca wersja symulacji Unity
-- Podstawowe zachowania larw
-- Gotowa do code review przez zespół
-- Walidacja poprawności modelu biologicznego
+- First working version of the Unity simulation
+- Basic larval behaviors
+- Ready for code review by the team
+- Validation of the biological model
 
-#### 🚀 13.09.2025: Symulacja v1.0.0 - Pierwsze dane
+#### 13.09.2025: simulation v1.0.0 — first data
 
-**Status:** ✅ Zakończono
+Status: completed
 
-**Wersja 1.0.0 symulacji gotowa do:**
+Version 1.0.0 of the simulation ready for:
 
-- Generacji pierwszej testowej porcji danych
-- Walidacji pipeline'u generowania
-- Testowania poprawności danych syntetycznych
-- Wstępnego trenowania modeli ML
+- Generation of the first test data batch
+- Validation of the generation pipeline
+- Testing correctness of synthetic data
+- Initial training of ML models
 
 ---
 
-## 🚀 Faza II: Backend, Frontend i wstępny model ML
+## Phase II: backend, frontend and initial ML model
 
-**Okres:** 20 września - 30 września 2025
+**Period:** 20 September - 30 September 2025
 
 <!-- markdownlint-disable MD024 -->
 
-### Cele główne
+### Main goals
 
-- Rozwój interfejsu użytkownika
-- Implementacja API i modeli bazodanowych
-- Wybór i trenowanie pierwszego modelu ML
-- Druga generacja danych z symulacji
+- Frontend development
+- Implementation of API and database models
+- Selection and training of the first ML model
+- Second generation of simulation data
 
-### Kamienie milowe
+### Milestones
 
-#### 🖥️ 20.09.2025: Panel logowania i rejestracji (Frontend)
+#### 20.09.2025: login and registration screens (frontend)
 
-**Status:** ✅ Zakończono
+Status: completed
 
-**Zaimplementowano w Flutter:**
+Implemented in Flutter:
 
-- Ekran logowania z walidacją
-- Formularz rejestracji
-- Integracja z OAuth Google
-- Obsługa MFA
-- Przejrzysty UX/UI
+- Login screen with validation
+- Registration form
+- Google OAuth integration
+- MFA support
+- Clear UX/UI
 
-#### 🏠 25.09.2025: Landing Page
+#### 25.09.2025: landing page
 
-**Status:** ✅ Zakończono
+Status: completed
 
-- Strona główna aplikacji
-- Prezentacja funkcjonalności systemu
-- Nawigacja do głównych sekcji
-- Responsywny design
+- Application home page
+- Presentation of system features
+- Navigation to main sections
+- Responsive design
 
-#### 🧠 26.09.2025: Wybór finalnego modelu ML
+#### 26.09.2025: final ML model selection
 
-**Status:** ✅ Zakończono
+Status: completed
 
-**Proces wyboru:**
+Selection process:
 
-- Analiza różnych architektur (CNN, RNN, Transformer)
-- Porównanie wydajności
-- Testy na danych syntetycznych
-- Wybór optymalnego modelu pod kątem:
-  - Dokładności predykcji
-  - Czasu inferencji
-  - Wymagań obliczeniowych
+- Analysis of architectures (CNN, RNN, Transformer)
+- Performance comparison
+- Tests on synthetic data
+- Selection based on:
+  - Prediction accuracy
+  - Inference time
+  - Compute requirements
 
-#### 👤 30.09.2025: Panel użytkownika
+#### 30.09.2025: user panel
 
-**Status:** ✅ Zakończono
+Status: completed
 
-**Funkcjonalności:**
+Features:
 
-- Dashboard z podsumowaniem
-- Historia przeprowadzonych analiz
-- Zarządzanie próbkami
-- Ustawienia konta
+- Dashboard with summary
+- History of analyses
+- Sample management
+- Account settings
 
-#### 🤖 30.09.2025: Trenowanie modelu na danych syntetycznych
+#### 30.09.2025: training on synthetic data
 
-**Status:** ✅ Zakończono
+Status: completed
 
-- Pierwsza faza trenowania na danych z Unity
+- First phase of training on Unity data
 - Baseline performance metrics
-- Walidacja krzyżowa
-- Analiza wyników
+- Cross-validation
+- Results analysis
 
-#### 🗄️ 30.09.2025: Modele bazodanowe i API Endpoints
+#### 30.09.2025: database models and API endpoints
 
-**Status:** ✅ Zakończono
+Status: completed
 
-**Backend (Django):**
+Backend (Django):
 
-- Finalizacja modeli bazodanowych
+- Finalization of database models
   - User
   - Sample
   - Analysis
   - Result
   - Metadata
-- Implementacja REST API endpoints
+- Implementation of REST API endpoints
 - Django REST Framework setup
-- Dokumentacja w Swagger
+- Swagger documentation
 
-#### 🎮 30.09.2025: Symulacja v1.1.0 - Pełna generacja
+#### 30.09.2025: simulation v1.1.0 — full generation
 
-**Status:** ✅ Zakończono
+Status: completed
 
-**Wersja 1.1.0 symulacji:**
+Simulation v1.1.0:
 
-- Rozszerzone scenariusze
-- Różnorodne warunki eksperymentalne
-- Generacja wszystkich planowanych danych
-- Większy zbiór treningowy
+- Extended scenarios
+- Diverse experimental conditions
+- Generation of all planned data
+- Larger training set
 
-#### ✅ 30.09.2025: Walidacja wydajności modelu ML
+#### 30.09.2025: ML model performance validation
 
-**Status:** ✅ Zakończono
+Status: completed
 
-**Metryki wydajności:**
+Performance metrics:
 
 - Accuracy
 - Precision / Recall
 - F1-score
 - Confusion matrix
 - ROC AUC
-- Czas predykcji pojedynczej próbki
+- Prediction time per sample
 
 ---
 
-## 🔗 Faza III: Integracja i optymalizacja
+## Phase III: integration and optimization
 
-**Okres:** 5 października - 31 października 2025
+Period: 5 October - 31 October 2025
 
-### Cele główne
+### Main goals
 
-- Połączenie wszystkich komponentów systemu
-- Optymalizacja modelu ML na danych rzeczywistych
-- Wdrożenie systemu produkcyjnego
-- Testy końcowe
+- Connect all system components
+- Optimize the ML model on real data
+- Deploy the system to production
+- Final testing
 
-### Kamienie milowe
+### Milestones
 
-#### 🔌 05.10.2025: Połączenie Frontend z Backendem
+#### 05.10.2025: connect frontend with backend
 
-**Status:** ✅ Zakończono
+Status: completed
 
-- Integracja Flutter z Django REST API
-- Implementacja komunikacji HTTP
-- Zarządzanie stanem aplikacji
-- Obsługa błędów i retry logic
+- Integration of Flutter with Django REST API
+- Implementation of HTTP communication
+- Application state management
+- Error handling and retry logic
 - Token refresh mechanism
 
-#### ⚙️ 07.10.2025: Optymalizacja wag modelu i połączenie z Backend
+#### 07.10.2025: model weight optimization and backend integration
 
-**Status:** 🔄 **AKTUALNY MILESTONE**
+Status: in progress
 
-**Zadania:**
+Tasks:
 
-- Fine-tuning wag modelu ML
-- Quantization i pruning (jeśli potrzebne)
-- Wstępne API do komunikacji Backend ↔ ML Service
-- Testowanie przepływu danych
+- Fine-tuning of ML model weights
+- Quantization and pruning (if needed)
+- Initial API for backend ↔ ML service communication
+- Testing the data flow
 
-#### 📹 08.10.2025: Funkcjonalność przesyłania filmów
+#### 08.10.2025: video upload functionality
 
-**Status:** ⏳ Planowane
+Status: planned
 
-**Do zaimplementowania:**
+To implement:
 
-- Upload wideo z frontendu
-- Walidacja formatów (MP4, AVI, MOV)
-- Progress bar podczas uploadu
-- Chunked upload dla dużych plików
-- Przechowywanie w Azure Storage
+- Video upload from frontend
+- Validation of formats (MP4, AVI, MOV)
+- Upload progress indicator
+- Chunked upload for large files
+- Storage in Azure Storage
 
-#### 🚀 12.10.2025: Hostowanie modelu ML jako mikroserwis
+#### 12.10.2025: host ML model as a microservice
 
-**Status:** ⏳ Planowane
+Status: planned
 
-**Architektura mikroserwisu:**
+Microservice architecture:
 
-- Odseparowanie modelu od głównego backendu
-- REST/gRPC API dla predykcji
-- Konteneryzacja w Dockerze
-- Deploy na Azure
-- Load balancing i autoscaling
+- Separate the model from the main backend
+- REST/gRPC API for predictions
+- Containerization with Docker
+- Deployment to Azure
+- Load balancing and autoscaling
 
-#### 🔗 15.10.2025: Kluczowa integracja - Backend ↔ ML ↔ Frontend
+#### 15.10.2025: key integration — backend ↔ ML ↔ frontend
 
-**Status:** ⏳ Planowane
+Status: planned
 
-**Pełny pipeline:**
+Full pipeline:
 
-1. Frontend wysyła wideo do Backendu
-2. Backend przekazuje do ML Service
-3. ML Service przetwarza i analizuje
-4. Wyniki wracają do Backendu
-5. Backend zapisuje w bazie
-6. Frontend otrzymuje i wyświetla wynik
+1. Frontend sends video to backend
+2. Backend forwards to ML service
+3. ML service processes and analyzes
+4. Results return to backend
+5. Backend stores results in the database
+6. Frontend receives and displays the result
 
-**Krytyczne testy:**
+Critical tests:
 
 - End-to-end flow
-- Handling timeoutów
+- Timeout handling
 - Concurrent requests
-- Error handling na każdym etapie
+- Error handling at each stage
 
-#### 🎯 18.10.2025: Przetrenowanie na prawdziwych danych
+#### 18.10.2025: retraining on real data
 
-**Status:** ⏳ Planowane
+Status: planned
 
-**Transfer learning:**
+Transfer learning:
 
-- Fine-tuning na rzeczywistych nagraniach larw
-- Porównanie z wynikami na danych syntetycznych
-- Walidacja poprawy accuracy
-- A/B testing starych vs nowych wag
-- Dokumentacja zmian w performance
+- Fine-tuning on real larval recordings
+- Comparison with synthetic data results
+- Validation of accuracy improvements
+- A/B testing of old vs new weights
+- Documentation of performance changes
 
-#### 🧪 31.10.2025: Testy końcowe i optymalizacja
+#### 31.10.2025: final tests and optimization
 
-**Status:** ⏳ Planowane
+Status: planned
 
-**Obszary testowania:**
+Testing areas:
 
-1. **Frontend**
+1. Frontend
 
    - UI/UX testing
-   - Cross-platform compatibility
-   - Responsive design
-   - Accessibility
+   - cross-platform compatibility
+   - responsive design
+   - accessibility
 
-2. **Backend**
+2. Backend
 
-   - Load testing
-   - Security audit
+   - load testing
+   - security audit
    - API performance
-   - Database optimization
+   - database optimization
 
-3. **API**
+3. API
 
-   - Integration tests
-   - Contract testing
-   - Documentation completeness
+   - integration tests
+   - contract testing
+   - documentation completeness
 
-4. **Całość systemu**
-   - End-to-end scenarios
-   - Performance benchmarking
-   - Stress testing
-   - Security penetration testing
+4. Whole system
+   - end-to-end scenarios
+   - performance benchmarking
+   - stress testing
+   - security penetration testing
 
-**Optymalizacje:**
+Optimizations:
 
 - Database indexes
 - Query optimization
@@ -330,88 +330,85 @@ Projekt realizowany jest w **trzech głównych fazach** od czerwca do październ
 
 ---
 
-## 📊 Metryki sukcesu projektu
+## Project success metrics
 
-### Wydajność techniczna
+### Technical performance
 
-- ⏱️ Czas analizy pojedynczej próbki: **< 20 minut**
-- 🎯 Accuracy modelu ML: **> 85%**
-- 🚀 Czas odpowiedzi API: **< 2 sekundy**
-- 💾 Obsługa równoczesnych użytkowników: **> 10**
+- Analysis time per sample: < 20 minutes
+- ML model accuracy: > 85%
+- API response time: < 2 seconds
+- Concurrent users supported: > 10
 
-### Funkcjonalność
+### Functionality
 
-- ✅ Pełny workflow od uploadu do wyniku
-- ✅ Wieloplatformowy interfejs użytkownika
-- ✅ Bezpieczne uwierzytelnianie i autoryzacja
-- ✅ Dokumentacja API i użytkownika
+- Full workflow from upload to result
+- Multi-platform user interface
+- Secure authentication and authorization
+- API and user documentation
 
-### Jakość
+### Quality
 
-- 🧪 Pokrycie testami: **> 70%**
-- 🐛 Zero critical bugs w produkcji
-- 📖 Pełna dokumentacja techniczna
-- 🔒 Compliance z wymogami bezpieczeństwa
-
----
-
-## 🎯 Aktualny status (7 października 2025)
-
-### ✅ Zakończone
-
-- Infrastruktura projektu
-- System uwierzytelniania
-- Podstawowy interfejs użytkownika
-- Modele bazodanowe i API
-- Symulacja Unity (v1.1.0)
-- Pierwszy model ML wytrenowany
-- Połączenie Frontend-Backend
-
-### 🔄 W trakcie
-
-- Optymalizacja wag modelu ML
-- Połączenie ML Service z Backendem
-- Implementacja upload funkcjonalności
-
-### ⏳ Nadchodzące (do 31.10)
-
-- Hostowanie ML jako mikroserwis
-- Pełna integracja wszystkich komponentów
-- Trenowanie na danych rzeczywistych
-- Testy końcowe i optymalizacja
-- Deployment produkcyjny
+- Test coverage: > 70%
+- Zero critical bugs in production
+- Complete technical documentation
+- Compliance with security requirements
 
 ---
 
-## 🚧 Ryzyka i mitigation
+## Current status (7 October 2025)
 
-### Zidentyfikowane ryzyka
+### Completed
 
-1. **Opóźnienie w dostawie prawdziwych danych**
+- Project infrastructure
+- Authentication system
+- Basic user interface
+- Database models and API
+- Unity simulation (v1.1.0)
+- First ML model trained
+- Frontend-backend connection
 
-   - _Mitigation:_ Użycie danych syntetycznych z Unity
+### In progress
 
-2. **Wydajność modelu ML w produkcji**
+- ML model weight optimization
+- Connecting ML service with backend
+- Implementing upload functionality
 
-   - _Mitigation:_ Optymalizacja, quantization, caching
+### Upcoming (until 31.10)
 
-3. **Integracja komponentów**
-
-   - _Mitigation:_ Wczesne testy integracyjne, jasne API contracts
-
-4. **Skalowalność systemu**
-   - _Mitigation:_ Architektura mikroserwisowa, cloud autoscaling
-
----
-
-## 📈 Następne kroki (najbliższe 2 tygodnie)
-
-1. **8-9 października:** Implementacja upload wideo
-2. **10-12 października:** Deploy ML jako mikroserwis
-3. **13-15 października:** Integracja końcowa
-4. **16-18 października:** Trenowanie na prawdziwych danych
-5. **19-31 października:** Testy i optymalizacja finalna
+- Hosting ML as a microservice
+- Full integration of all components
+- Training on real data
+- Final tests and optimization
 
 ---
 
-Roadmapa jest żywym dokumentem i może być aktualizowana w odpowiedzi na pojawiające się wyzwania i możliwości w trakcie realizacji projektu.
+## Risks and mitigation
+
+### Identified risks
+
+1. Delay in delivery of real data
+
+   - Mitigation: use synthetic data from Unity
+
+2. ML model performance in production
+
+   - Mitigation: optimization, quantization, caching
+
+3. Component integration
+
+   - Mitigation: early integration tests, clear API contracts
+
+4. System scalability
+   - Mitigation: microservice architecture, cloud autoscaling
+
+---
+
+## Next steps (next two weeks)
+
+1. 8-9 October: Implement video upload
+2. 10-12 October: Deploy ML as a microservice
+3. 13-15 October: Final integration
+4. 16-18 October: Training on real data
+5. 19-31 October: Testing and final optimization
+
+The roadmap is a living document and may be updated in response to challenges and opportunities that arise during project execution.

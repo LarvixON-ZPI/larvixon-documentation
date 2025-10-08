@@ -1,188 +1,135 @@
 ---
-title: Zespół projektu
-description: Członkowie zespołu LarvixON AI i opiekun naukowy
+title: Project team
+description: Members of the LarvixON AI project team and academic supervisor
 ---
 
-Projekt LarvixON AI jest realizowany przez zespół studentów Wydziału Informatyki i Telekomunikacji Politechniki Wrocławskiej w ramach Zespołowego Przedsięwzięcia Informatycznego.
-
----
-
-## 👨‍🏫 Opiekun Naukowy
-
-### dr inż. Natalia Piórkowska
-
-**Rola:** Opiekun pracy
-
-**Afiliacja:** Politechnika Wrocławska, Wydział Informatyki i Telekomunikacji
-
-Dr inż. Natalia Piórkowska sprawuje nadzór naukowy nad projektem, wspierając zespół w zakresie metodologii badawczej, uczenia maszynowego oraz zapewniając zgodność projektu z wymogami akademickimi.
+The LarvixON AI project is carried out by a team of students from the Faculty of Computer Science and Telecommunications at Wrocław University of Science and Technology as part of a team project.
 
 ---
 
-## 👥 Członkowie Zespołu
+## Academic supervisor
 
-Zespół składa się z czterech studentów kierunku IST (Informatyka Stosowana), z których każdy wnosi unikalne umiejętności i specjalizacje do projektu.
+### Dr inż. Natalia Piórkowska
+
+Role: project supervisor
+
+Affiliation: Wrocław University of Science and Technology, Faculty of Computer Science and Telecommunications
+
+Dr inż. Natalia Piórkowska provides academic supervision for the project, supporting the team in research methodology, machine learning and ensuring compliance with academic requirements.
+
+---
+
+## Team members
+
+The team consists of four students of the IST program (Applied Computer Science), each bringing unique skills and specializations to the project.
 
 ### Kubś Mikołaj
 
-**Rola w projekcie:** [Do uzupełnienia - np. Team Lead / ML Engineer / Backend Developer]
+Role in project: Unity developer
 
-**Obszary odpowiedzialności:**
+Areas of responsibility:
 
-- [Do uzupełnienia]
+- Larvixon simulation in Unity
 
-**Technologie:**
+Technologies:
 
-- [Do uzupełnienia]
+- Unity
 
 ---
 
 ### Kulka Krzysztof
 
-**Rola w projekcie:** [Do uzupełnienia - np. Backend Developer / DevOps Engineer]
+Role in project: ML engineer
 
-**Obszary odpowiedzialności:**
+Areas of responsibility:
 
-- [Do uzupełnienia]
+- Larvixon machine learning models
 
-**Technologie:**
+Technologies:
 
-- [Do uzupełnienia]
+- Python
 
 ---
 
 ### Łopianiak Martyna
 
-**Rola w projekcie:** [Do uzupełnienia - np. Frontend Developer / UI/UX Designer]
+Role in project: backend developer
 
-**Obszary odpowiedzialności:**
+Areas of responsibility:
 
-- [Do uzupełnienia]
+- Larvixon app backend
 
-**Technologie:**
+Technologies:
 
-- [Do uzupełnienia]
+- Python
+- Django
 
 ---
 
 ### Łuszczek Patryk
 
-**Rola w projekcie:** [Do uzupełnienia - np. ML Engineer / Unity Developer]
+role in project: frontend developr
 
-**Obszary odpowiedzialności:**
+Areas of responsibility:
 
-- [Do uzupełnienia]
+- Larvixon app frontend
 
-**Technologie:**
+Technologies:
 
-- [Do uzupełnienia]
-
----
-
-## 🤝 Organizacja pracy zespołu
-
-### Metodyka rozwoju
-
-Zespół pracuje według metodyki zwinnej (Agile), z regularnymi sprintami i spotkaniami statusowymi.
-
-**Praktyki:**
-
-- 📅 Cotygodniowe spotkania zespołu
-- 🔄 Dwutygodniowe sprinty
-- 📊 Code reviews i pair programming
-- 🎯 Retrospektywy i continuous improvement
-
-### Narzędzia współpracy
-
-- **Git / GitHub** - kontrola wersji i współpraca nad kodem
-- **Discord / Slack** - komunikacja zespołu
-- **Jira / Trello** - zarządzanie zadaniami
-- **Google Drive** - dokumentacja i materiały
-
-### Podział odpowiedzialności
-
-#### Backend (Django + PostgreSQL)
-
-- Architektura API
-- Modele bazodanowych
-- Integracja z ML Service
-- Uwierzytelnianie i autoryzacja
-
-#### Frontend (Flutter)
-
-- Interfejs użytkownika
-- Integracja z API
-- Cross-platform deployment
-- UX/UI design
-
-#### Machine Learning (Python + PyTorch)
-
-- Przetwarzanie danych wideo
-- Trenowanie modeli
-- Optymalizacja algorytmów
-- Walidacja wyników
-
-#### Symulacja (Unity)
-
-- Modelowanie zachowań larw
-- Generowanie danych syntetycznych
-- Parametryzacja scenariuszy
-
-#### DevOps i infrastruktura
-
-- Konteneryzacja (Docker)
-- CI/CD pipeline
-- Deployment na Azure
-- Monitoring i logging
+- Flutter
 
 ---
 
-## 🎓 O projekcie akademickim
+## Team organization
 
-**Uczelnia:** Politechnika Wrocławska  
-**Wydział:** Informatyki i Telekomunikacji  
-**Kierunek:** IST (Informatyka Stosowana)  
-**Przedmiot:** Zespołowe Przedsięwzięcie Informatyczne  
-**Rok akademicki:** 2024/2025  
-**Semestr:** Zimowy
+### Development methodology
 
-### Cele dydaktyczne
+The team follows an agile methodology with regular sprints and status meetings.
 
-Projekt służy nie tylko rozwojowi zaawansowanego systemu diagnostycznego, ale również:
+Practices:
 
-- 📚 Praktycznemu zastosowaniu wiedzy z zakresu uczenia maszynowego
-- 💻 Rozwijaniu umiejętności pracy w zespole programistycznym
-- 🏗️ Poznaniu pełnego cyklu rozwoju oprogramowania
-- 🔬 Łączeniu wiedzy informatycznej z aplikacjami w medycynie
-- 📊 Zarządzaniu projektem IT od koncepcji do wdrożenia
+- weekly team meetings
+- two-week sprints
+- code reviews and pair programming
+- retrospectives and continuous improvement
 
----
+### Collaboration tools
 
-## 📞 Kontakt
+- Git / GitHub – version control, code collaboration
+  - GitHub Projects for task tracking
+  - GitHub Actions for CI/CD
+  - GitHub Pages for hosting
+- Discord – team communication
+- Azure AWS – cloud services and hosting
 
-### Repozytorium projektu
+## Academic project
 
-- **GitHub:** [Do uzupełnienia - link do organizacji/repo]
+Institution: Wrocław University of Science and Technology  
+Faculty: Faculty of Computer Science and Telecommunications  
+Program: IST (Applied Computer Science)  
+Course: ZPI Team project  
+Academic year: 2025/2026  
+Semester: winter
 
-### Dokumentacja
+### Learning objectives
 
-- **Docs:** [larvixon-documentation.example.com] (obecna strona)
+The project serves not only to develop an advanced diagnostic system but also to:
 
-### Email projektu
-
-- 📧 [Do uzupełnienia - email kontaktowy zespołu]
-
----
-
-## 🏆 Podziękowania
-
-Zespół LarvixON AI dziękuje:
-
-- **Dr inż. Natalii Piórkowskiej** - za nieocenione wsparcie naukowe i mentoring
-- **Wrocławskiemu Centrum Superkomputerowemu (WCSS)** - za udostępnienie mocy obliczeniowej
-- **Politechnice Wrocławskiej** - za stworzenie warunków do realizacji projektu
-- **Współpracującym laboratoriom** - za dostarczenie danych biologicznych
+- apply machine learning knowledge in practice
+- develop teamwork skills in software development
+- learn the full software development lifecycle
+- combine computer science with medical applications
+- manage an IT project from concept to deployment
 
 ---
 
-_Jesteś zainteresowany projektem lub chcesz się z nami skontaktować? Napisz do nas!_
+## Acknowledgements
+
+The LarvixON AI team thanks:
+
+- Dr inż. Natalia Piórkowska – for academic support and mentoring
+- Wrocław Supercomputing Center (WCSS) – for providing compute resources
+- Wrocław University of Science and Technology – for enabling the project
+- Uniwersytet Medyczny - for providing biological data
+
+---

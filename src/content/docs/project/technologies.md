@@ -1,434 +1,422 @@
 ---
-title: Stack technologiczny
-description: Technologie i narzędzia wykorzystywane w projekcie LarvixON AI
+title: Technology stack
+description: Technologies and tools used in the LarvixON AI project
 ---
 
-System LarvixON AI wykorzystuje szeroki zakres nowoczesnych technologii, od obliczeń wysokiej wydajności, przez uczenie maszynowe, po wieloplatformowe aplikacje webowe i mobilne.
-
----
-
-## 🖥️ Infrastruktura obliczeniowa
-
-### Wrocławskie Centrum Superkomputerowe (WCSS)
-
-**Rola:** Moc obliczeniowa dla intensywnych zadań
-
-**Zastosowanie:**
-
-- Analiza danych wideo na dużą skalę
-- Trenowanie modeli uczenia maszynowego
-- Przeprowadzanie eksperymentów badawczych
-- Testowanie wydajności systemu
-- Przetwarzanie równoległe wielu próbek
-
-**Korzyści:**
-
-- Dostęp do zasobów HPC (High Performance Computing)
-- Znaczne przyspieszenie procesu trenowania modeli
-- Możliwość eksperymentowania z większymi zbiorami danych
+The LarvixON AI system uses a broad set of modern technologies, from high-performance computing and machine learning to cross-platform web and mobile applications.
 
 ---
 
-## 🐍 Python - Rdzeń systemu ML
+## Infrastructure
 
-### Główne zastosowanie
+### Wrocław Supercomputing and Networking Center (WCSS)
 
-Python jest **głównym językiem** w części badawczej projektu.
+Role: compute resources for intensive workloads
 
-### Obszary wykorzystania
+Use cases:
 
-1. **Przetwarzanie danych**
+- Large-scale video data analysis
+- Training machine learning models
+- Conducting research experiments
+- Performance testing
+- Parallel processing of many samples
 
-   - Analiza danych ruchowych larw
-   - Preprocessing nagrań wideo
-   - Czyszczenie i normalizacja danych
+Benefits:
 
-2. **Ekstrakcja cech**
+- Access to high-performance computing (HPC) resources
+- Significant acceleration of model training
+- Ability to experiment with larger datasets
 
-   - Identyfikacja wzorców behawioralnych
+---
+
+## Python - ML core
+
+### Primary role
+
+Python is the main language used in the backend and ML parts of the project.
+
+### Areas of application
+
+1. Data processing
+
+   - Analysis of larval movement data
+   - Video preprocessing
+   - Data cleaning and normalization
+
+2. Feature extraction
+
+   - Identification of behavioral patterns
    - Feature engineering
-   - Analiza statystyczna
+   - Statistical analysis
 
-3. **Machine Learning**
-   - Implementacja modeli klasyfikacyjnych
-   - Trenowanie i walidacja
-   - Optymalizacja hiperparametrów
+3. Machine learning
 
-### Biblioteki Python
+   - Implementing classification models
+   - Training and validation
+   - Hyperparameter optimization
 
-- **NumPy** - operacje na tablicach i obliczenia numeryczne
-- **pandas** - manipulacja i analiza danych tabelarycznych
-- **scikit-learn** - klasyczne algorytmy uczenia maszynowego
-- **PyTorch** - deep learning i sieci neuronowe
-- **OpenCV** (prawdopodobnie) - przetwarzanie obrazu i wideo
-- **Matplotlib/Seaborn** - wizualizacja danych
+### Python libraries
+
+- NumPy — array operations and numerical computation
+- pandas — tabular data manipulation and analysis
+- scikit-learn — classical machine learning algorithms
+- PyTorch — deep learning and neural networks
+- OpenCV (likely) — image and video processing
+- Matplotlib / Seaborn — data visualization
 
 ---
 
-## 🌐 Backend - Django
+## Backend — Django
 
-### Framework Django
+### Django framework
 
-**Typ:** Potężny, wysokopoziomowy framework webowy w Pythonie
+Type: a full-featured, high-level Python web framework
 
-**Charakterystyka:**
+Characteristics:
 
-- ✅ Skalowalny
-- ✅ Bezpieczny
-- ✅ "Batteries included" - pełna funkcjonalność out-of-the-box
+- Scalable
+- Secure
+- Batteries-included approach (many features out of the box)
 
-### Odpowiedzialności backendu
+### Backend responsibilities
 
-1. **Zarządzanie danymi**
+1. Data management
 
-   - Przechowywanie wyników analiz
-   - Zarządzanie metadanymi eksperymentalnymi
-   - Historia pacjentów i próbek
+   - Storing analysis results
+   - Managing experimental metadata
+   - Keeping history of samples and patients
 
-2. **Logika biznesowa**
+2. Business logic
 
-   - Workflow analizy próbek
-   - Zarządzanie użytkownikami i uprawnieniami
-   - Integracja z modelem ML
+   - Analysis workflow for samples
+   - User and permissions management
+   - Integration with ML models
 
-3. **API REST**
-   - Komunikacja z frontendem
-   - Endpoints dla przesyłania wideo
-   - Zwracanie wyników predykcji
+3. REST API
 
-### Funkcjonalności
+   - Communication with the frontend
+   - Endpoints for video uploads
+   - Returning prediction results
 
-- **Autoryzacja i uwierzytelnianie**
-  - Logowanie i rejestracja użytkowników
+### Features
+
+- Authentication and authorization
+  - Login and registration
   - Multi-Factor Authentication (MFA)
-  - Logowanie przez Google (OAuth)
-- **Django REST Framework**
-  - Tworzenie RESTful API
-  - Serializacja danych
-  - Walidacja requestów
+  - Google OAuth
+- Django REST Framework
+  - Building RESTful APIs
+  - Serialization
+  - Request validation
 
 ---
 
-## 📚 Dokumentacja API - Swagger 2
+## API documentation — Swagger (OpenAPI 2.0)
 
 ### OpenAPI 2.0 (Swagger)
 
-**Funkcje:**
+Features:
 
-- 📖 Automatyczna dokumentacja API
-- 🔍 Wizualizacja endpoints
-- 🧪 Interaktywne testowanie API
-- 🤝 Ułatwienie współpracy frontend-backend
+- Automatic API documentation
+- Endpoint visualization
+- Interactive API testing
+- Improves frontend-backend collaboration
 
-**Korzyści:**
+Benefits:
 
-- Przejrzysty obraz dostępnych operacji
-- Możliwość testowania bez zewnętrznych narzędzi
-- Standaryzacja komunikacji między zespołami
+- Clear overview of available operations
+- Allows testing without external tools
+- Standardizes communication between teams
 
 ---
 
-## 📱 Frontend - Flutter
+## Frontend — Flutter
 
-### Framework Flutter (Dart)
+### Flutter (Dart)
 
-**Google's UI toolkit** dla budowy natywnych aplikacji
+Google's UI toolkit for building native applications.
 
-### Wieloplatformowość
+### Cross-platform targets
 
-Jedna baza kodu działa na:
+One codebase supports:
 
-- 🌐 **Web** - aplikacja w przeglądarce
-- 🐧 **Linux** - natywna aplikacja desktopowa
-- 🍎 **macOS** - natywna aplikacja desktopowa
-- 🪟 **Windows** - natywna aplikacja desktopowa
-- 📱 **Android** - aplikacja mobilna
-- 📱 **iOS** - aplikacja mobilna
+- Web
+- Linux (desktop)
+- macOS (desktop)
+- Windows (desktop)
+- Android
+- iOS
 
-### Funkcjonalności interfejsu
+### Interface features
 
-1. **Panel logowania i rejestracji**
+1. Login and registration panel
 
-   - Bezpieczne uwierzytelnianie
-   - Integracja z Google OAuth
-   - Obsługa MFA
+   - Secure authentication
+   - Google OAuth integration
+   - MFA support
 
-2. **Landing page**
+2. Landing page
 
-   - Informacje o systemie
-   - Przejrzysta nawigacja
+   - Project overview
+   - Clear navigation
 
-3. **Panel użytkownika**
+3. User panel
 
-   - Dashboard z historią analiz
-   - Zarządzanie próbkami
-   - Podgląd wyników
+   - Dashboard with analysis history
+   - Sample management
+   - Result preview
 
-4. **Przesyłanie wideo**
+4. Video upload
 
-   - Upload nagrań larw
+   - Upload larva recordings
    - Progress bar
-   - Walidacja formatu
+   - Format validation
 
-5. **Wyświetlanie wyników**
-   - Wizualizacja predykcji
-   - Interpretacja wyników
-   - Eksport raportów
+5. Results presentation
+   - Prediction visualization
+   - Result interpretation
+   - Report export
 
-### Zalety Flutter
+### Flutter advantages
 
-- ⚡ Szybki rozwój dzięki hot reload
-- 🎨 Piękne, natywne UI
-- 🚀 Wysoka wydajność
-- 📦 Jeden kod = wiele platform
+- Fast development with hot reload
+- Native-looking UI
+- High performance
+- Single codebase for many platforms
 
 ---
 
-## 🎮 Symulacja - Unity
+## Simulation — Unity
 
 ### Unity Engine
 
-**Przeznaczenie:** Generowanie syntetycznych danych treningowych
+Purpose: generate synthetic training data
 
-### Funkcje symulacji
+### Simulation features
 
-1. **Modelowanie zachowania larw**
+1. Modeling larval behavior
 
-   - Symulacja ruchu naturalnego
-   - Reakcje na bodźce toksyczne
-   - Realistyczne wzorce behawioralne
+   - Simulate natural movement
+   - Reactions to toxic stimuli
+   - Realistic behavioral patterns
 
-2. **Generacja danych**
+2. Data generation
 
-   - Tworzenie różnorodnych scenariuszy
-   - Kontrolowane warunki eksperymentalne
-   - Duże ilości danych bez kosztów biologicznych
+   - Create diverse scenarios
+   - Controlled experimental conditions
+   - Large datasets without biological costs
 
-3. **Wersje symulacji**
-   - **v1.0.0** - pierwsza testowa porcja danych (13.09.2025)
-   - **v1.1.0** - generacja wszystkich danych (30.09.2025)
+3. Simulation releases
+   - v1.0.0 — initial test dataset (2025-09-13)
+   - v1.1.0 — full data generation (2025-09-30)
 
-### Znaczenie dla projektu
+Importance for the project:
 
-- 🔄 Uzupełnienie ograniczonych danych rzeczywistych
-- 🧪 Testowanie różnych scenariuszy
-- 📊 Augmentacja zbioru treningowego
+- Complements limited real-world data
+- Enables testing of various scenarios
+- Augments the training dataset
 
 ---
 
-## 🏷️ Anotacja danych - Roboflow
+## Data annotation — Roboflow
 
 ### Roboflow
 
-**Platforma** do zarządzania danymi wizualnymi i anotacji
+Platform for managing visual data and annotations.
 
-### Zastosowanie
+### Use cases
 
-- 📹 Anotacja danych wideo
-- 🔍 Oznaczanie obiektów (larw) na klatkach filmu
-- 🎯 Przygotowanie danych treningowych dla modeli detekcji
-- 📊 Tracking ruchu larw
+- Video data annotation
+- Marking objects (larvae) on frames
+- Preparing training datasets for detection models
+- Tracking larval movement
 
-### Proces
+### Process
 
-1. Upload nagrań wideo
-2. Automatyczna/manualna anotacja larw
-3. Eksport w formatach ML (YOLO, COCO, itp.)
-4. Integracja z pipeline treningowym
+1. Upload videos
+2. Automatic / manual annotation of larvae
+3. Export in ML formats (YOLO, COCO, etc.)
+4. Integration with the training pipeline
 
 ---
 
-## 🗄️ Baza danych - PostgreSQL
+## Database — PostgreSQL
 
 ### PostgreSQL
 
-**Relacyjna baza danych** open-source
+Open-source relational database.
 
-### Przechowywane dane
+### Stored data
 
-1. **Wyniki analiz**
+1. Analysis results
 
-   - Predykcje modelu ML
+   - ML model predictions
    - Probability scores
-   - Timestamp analiz
+   - Analysis timestamps
 
-2. **Metadane eksperymentalne**
+2. Experimental metadata
 
-   - Informacje o próbkach
-   - Parametry eksperymentalne
-   - Warunki testów
+   - Sample information
+   - Experimental parameters
+   - Test conditions
 
-3. **Dane użytkowników**
+3. User data
 
-   - Profile lekarzy/laborantów
-   - Historia aktywności
-   - Uprawnienia dostępu
+   - Profiles for clinicians / lab staff
+   - Activity history
+   - Access permissions
 
-4. **Historia analiz**
-   - Pełny audit trail
-   - Możliwość weryfikacji wstecznej
+4. Analysis history
+   - Full audit trail
+   - Ability to verify past results
 
-### Zalety PostgreSQL
+### PostgreSQL benefits
 
-- ✅ ACID compliance - niezawodność transakcji
-- ✅ Zaawansowane typy danych (JSON, arrays)
-- ✅ Skalowalność
-- ✅ Rozbudowane funkcje analityczne
-- ✅ Doskonała integracja z Django
+- ACID compliance — reliable transactions
+- Advanced data types (JSON, arrays)
+- Scalability
+- Rich analytical features
+- Excellent integration with Django
 
 ---
 
-## 🐳 Konteneryzacja - Docker
+## Containerization — Docker
 
 ### Docker
 
-**Platforma** do konteneryzacji aplikacji
+Platform for containerizing applications.
 
-### Architektura kontenerów
+### Container architecture
 
-System LarvixON AI składa się z odseparowanych kontenerów:
+The LarvixON AI system is composed of separate containers:
 
-1. **Backend container** (Django)
-2. **Frontend container** (Flutter web build)
-3. **Database container** (PostgreSQL)
-4. **ML service container** (Python + model)
+1. Backend container (Django)
+2. Frontend container (Flutter web build)
+3. Database container (PostgreSQL)
+4. ML service container (Python + model)
 
-### Korzyści
+### Benefits
 
-- 🔒 **Izolacja** - każdy komponent w osobnym środowisku
-- 📦 **Przenośność** - "działa na moim" → "działa wszędzie"
-- ⚙️ **Spójność** - identyczne środowisko dev/prod
-- 🚀 **Łatwe wdrożenie** - `docker-compose up`
-- 📈 **Skalowalność** - łatwe skalowanie poszczególnych usług
-
-### Docker Compose
-
-Orkiestracja wszystkich kontenerów w ramach jednego środowiska:
-
-```yaml
-# Przykładowa struktura
-services:
-  backend:
-    # Django API
-  frontend:
-    # Flutter app
-  database:
-    # PostgreSQL
-  ml-service:
-    # Model ML
-```
+- Isolation — each component runs in its own environment
+- Portability — works the same across machines
+- Consistency — identical dev and production environments
+- Easy deployment — `docker-compose up`
+- Scalability — scale individual services as needed
 
 ---
 
-## ☁️ Cloud hosting - Microsoft Azure
+## Cloud hosting — Microsoft Azure
 
 ### Azure
 
-**Platforma chmurowa** Microsoft do hostowania aplikacji i usług
+Microsoft cloud platform for hosting applications and services.
 
-### Usługi wykorzystywane
+### Services used
 
-1. **Compute**
+1. Compute
 
-   - Virtual Machines lub App Services
-   - Hosting backendu i frontendu
-   - Możliwość autoscalingu
+   - Virtual Machines or App Services
+   - Hosting backend and frontend
+   - Auto-scaling capabilities
 
-2. **Storage**
+2. Storage
 
-   - Przechowywanie nagrań wideo
-   - Backup bazy danych
-   - Archiwizacja wyników
+   - Video storage
+   - Database backups
+   - Archiving results
 
-3. **Database**
+3. Database
 
    - Azure Database for PostgreSQL
-   - Zarządzane rozwiązanie bazodanowe
+   - Managed database solution
 
-4. **ML & AI**
-   - Azure Machine Learning (potencjalnie)
-   - Integracja z usługami analitycznymi
+4. ML & AI
 
-### Zalety Azure
+   - Azure Machine Learning (potential)
+   - Integration with analytics services
 
-- ☁️ **Wysoka dostępność** - uptime 99.9%
-- 📈 **Skalowalność** - elastyczne zasoby
-- 🔐 **Bezpieczeństwo** - compliance z medycznymi standardami
-- 🌍 **Globalna infrastruktura** - niska latencja
-- 🔧 **Integracje** - bogaty ekosystem usług
+### Azure benefits
+
+- High availability — strong uptime guarantees
+- Scalability — flexible resources
+- Security — compliance with medical standards
+- Global infrastructure — low latency
+- Rich ecosystem of integrations
 
 ---
 
-## 🔗 Integracja komponentów
+## Component integration
 
-### Architektura systemu
+### System architecture
 
 ```text
 ┌─────────────┐
-│   Flutter   │ ← Interfejs użytkownika
+│   Flutter   │ ← User interface
 │  (Frontend) │
 └──────┬──────┘
        │ REST API
        ↓
 ┌─────────────┐
-│   Django    │ ← Logika biznesowa
+│   Django    │ ← Business logic
 │  (Backend)  │
 └──────┬──────┘
        │
-       ├──→ PostgreSQL (dane)
+       ├──→ PostgreSQL (data)
        │
-       └──→ ML Service (predykcje)
+       └──→ ML Service (predictions)
                 ↓
-          WCSS (trenowanie)
+          WCSS (training)
 ```
 
-### Przepływ danych
+### Data flow
 
-1. Użytkownik przesyła wideo (Flutter)
-2. Backend odbiera i waliduje (Django)
-3. Wideo przekazywane do ML Service
-4. Model analizuje i zwraca predykcję
-5. Wynik zapisywany w bazie (PostgreSQL)
-6. Rezultat wyświetlany użytkownikowi (Flutter)
+1. A user uploads a video (Flutter)
+2. The backend receives and validates the upload (Django)
+3. The video is forwarded to the ML Service
+4. The model analyzes the video and returns a prediction
+5. The result is saved in the database (PostgreSQL)
+6. The result is displayed to the user (Flutter)
 
 ---
 
-## 🛠️ Narzędzia rozwojowe
+## Development tools
 
-### Kontrola wersji
+### Version control
 
-- **Git** - system kontroli wersji
-- **GitHub** - hosting repozytoriów
+- Git — version control system
+- **GitHub** — repository hosting
 
 ### CI/CD
 
-- **GitHub Actions** / **Azure Pipelines** (prawdopodobnie)
-- Automatyczne testy
-- Deployment pipeline
+- **GitHub Actions** — CI/CD tooling
+- Automated tests
+- Deployment pipelines
+- Automated tests
+- Deployment pipelines
 
-### Testowanie
+### Testing
 
-- **pytest** - testy backendu
-- **Flutter test** - testy frontendu
-- **Integration tests** - testy end-to-end
-
----
-
-## 📊 Podsumowanie stosu technologicznego
-
-| Warstwa          | Technologia     | Cel                    |
-| ---------------- | --------------- | ---------------------- |
-| **Compute**      | WCSS            | Trenowanie ML          |
-| **ML/AI**        | Python, PyTorch | Modele klasyfikacyjne  |
-| **Backend**      | Django, DRF     | API i logika           |
-| **Frontend**     | Flutter         | UI wieloplatformowy    |
-| **Database**     | PostgreSQL      | Przechowywanie danych  |
-| **Symulacja**    | Unity           | Dane syntetyczne       |
-| **Anotacja**     | Roboflow        | Przygotowanie danych   |
-| **Kontenery**    | Docker          | Izolacja i deployment  |
-| **Cloud**        | Azure           | Hosting i skalowalność |
-| **Dokumentacja** | Swagger 2       | API docs               |
+- **pytest** — backend tests
+- **flutter test** — frontend tests
+- Integration tests — end-to-end testing
 
 ---
 
-Ten zróżnicowany stack technologiczny pozwala na stworzenie kompleksowego, skalowalnego i niezawodnego systemu diagnostycznego, łączącego najnowsze osiągnięcia w dziedzinie ML, cloud computing i rozwoju aplikacji multiplatformowych.
+## Summary of the technology stack
+
+| Layer         | Technology      | Purpose                 |
+| ------------- | --------------- | ----------------------- |
+| Compute       | WCSS            | ML training             |
+| ML / AI       | Python, PyTorch | Classification models   |
+| Backend       | Django, DRF     | API and business logic  |
+| Frontend      | Flutter         | Cross-platform UI       |
+| Database      | PostgreSQL      | Data storage            |
+| Simulation    | Unity           | Synthetic data          |
+| Annotation    | Roboflow        | Data preparation        |
+| Containers    | Docker          | Isolation and delivery  |
+| Cloud         | Azure           | Hosting and scalability |
+| Documentation | Swagger 2       | API docs                |
+
+---
+
+This diverse technology stack enables building a comprehensive, scalable, and reliable diagnostic system that combines modern advances in ML, cloud computing, and cross-platform application development.

@@ -79,7 +79,7 @@ export default defineConfig({
               link: "/",
             },
             {
-              label: "Komunikacja",
+              label: "Communication",
               link: "/communication",
             },
           ],

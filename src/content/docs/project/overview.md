@@ -1,141 +1,141 @@
 ---
-title: Opis projektu
-description: Szczegółowy opis systemu LarvixON AI - cele, zakres i metodologia
+title: Project overview
+description: Detailed description of the LarvixON AI system - goals, scope and methodology
 ---
 
-## Informacje podstawowe
+## Basic information
 
-**Politechnika Wrocławska**  
-**Wydział Informatyki i Telekomunikacji**  
-Kierunek: IST  
-**Zespołowe Przedsięwzięcie Informatyczne**
+**Wrocław University of Science and Technology**  
+**Faculty of Computer Science and Telecommunications**  
+Program: IST  
+**Team project**
 
-**Tytuł:** System LarvixON AI – szybka diagnostyka toksyczności osocza z wykorzystaniem analizy behawioralnej larw i algorytmów uczenia maszynowego
+**Title:** LarvixON AI system – rapid plasma toxicity diagnostics using behavioral analysis of larvae and machine learning algorithms
 
-**Opiekun pracy:** dr inż. Natalia Piórkowska
+**Supervisor:** dr inż. Natalia Piórkowska
 
-**Rok:** 2025
-
----
-
-## 1. Syntetyczny opis projektu
-
-### Cel projektu
-
-Celem projektu jest opracowanie **szybkiego systemu diagnostycznego opartego na sztucznej inteligencji**, umożliwiającego wykrywanie ksenobiotyków w osoczu pacjentów. System ten ma analizować wzorce ruchowe larw _Galleria mellonella_, którym podano próbki osocza, w celu identyfikacji charakterystycznych reakcji organizmu na toksyczne substancje.
-
-### Kluczowe założenia
-
-- ⏱️ **Czas analizy:** nieprzekraczający 20 minut
-- 🎯 **Wysoka czułość i specyficzność** klasyfikacji
-- 🔬 **Rozpoznawanie subtelnych zmian** w motoryce larw
-- 💊 **Detekcja:** leków, narkotyków, toksyn lub patogenów
-
-### Cel ostateczny
-
-Wdrożenie nowatorskiej metody diagnostycznej, która przyczyni się do:
-
-- Poprawy skuteczności leczenia
-- Skrócenia czasu interwencji medycznej w stanach zagrożenia życia
-- Szybkiej identyfikacji substancji toksycznych w organizmie pacjenta
+**Year:** 2025
 
 ---
 
-## 2. Zakres projektu
+## 1. Synthetic description of the project
 
-Projekt obejmuje dwa równoległe nurty działania:
+### Goal of the project
 
-### A. Część badawcza - Algorytmy uczenia maszynowego
+The goal of the project is to develop a rapid diagnostic system based on artificial intelligence that detects xenobiotics in patient plasma. The system analyzes movement patterns of Galleria mellonella larvae exposed to plasma samples to identify characteristic organism responses to toxic substances.
 
-Koncentruje się na:
+### Key assumptions
 
-1. **Analizie danych ruchowych** larw _Galleria mellonella_
+- Analysis time: not exceeding 20 minutes
+- High sensitivity and specificity of classification
+- Detection of subtle changes in larval motility
+- Detection of drugs, narcotics, toxins, or pathogens
 
-   - Przetwarzanie danych wideo z obserwacji larw
-   - Tracking ruchu i zachowania
+### Ultimate objective
 
-2. **Ekstrakcji cech behawioralnych**
+Implement an innovative diagnostic method that contributes to:
 
-   - Identyfikacja charakterystycznych wzorców ruchowych
-   - Analiza zmian w motoryce związanych z ekspozycją na toksyny
-
-3. **Trenowaniu modeli klasyfikacyjnych**
-   - Rozwój algorytmów uczenia maszynowego
-   - Optymalizacja pod kątem czułości i specyficzności
-   - Walidacja na danych rzeczywistych i syntetycznych
-
-### B. Część inżynierska - Aplikacja diagnostyczna
-
-Opracowanie kompletnej aplikacji wspierającej kliniczne wykorzystanie systemu:
-
-#### Pipeline systemu
-
-1. **Wczytanie danych wideo** - import nagrań z analizowanymi larwami
-2. **Analiza** - automatyczne przetwarzanie przez algorytmy ML
-3. **Predykcja** - klasyfikacja obecności ksenobiotyków
-4. **Prezentacja wyniku** - przejrzysty interfejs dla użytkownika
-
-#### Interfejs użytkownika
-
-- Prosty interfejs graficzny
-- Dedykowany dla lekarzy i laborantów
-- Przeprowadzenie analizy w czasie rzeczywistym
-- Szybkie uzyskanie wyniku diagnostycznego
-
-### C. Symulacja i generacja danych
-
-Dodatkowy komponent projektu:
-
-- Prosta **symulacja larw w Unity**
-- Generowanie **syntetycznych danych** dla modelu ML
-- Wsparcie procesu trenowania w przypadku ograniczonej dostępności danych rzeczywistych
+- Improved treatment effectiveness
+- Reduced time to medical intervention in life-threatening situations
+- Rapid identification of toxic substances in a patient's organism
 
 ---
 
-## 3. Metodologia
+## 2. Project scope
 
-### Testowanie systemu
+The project includes two parallel workstreams:
 
-System zostanie przetestowany pod kątem:
+### A - Research track - machine learning algorithms
 
-1. **Wydajności**
+Focus areas:
 
-   - Czas przetwarzania pojedynczej próbki
-   - Optymalizacja wykorzystania zasobów obliczeniowych
+1. Analysis of movement data of Galleria mellonella larvae
 
-2. **Dokładności predykcji**
+   - Preprocessing of video recordings of larvae
+   - Tracking of movement and behavior
 
-   - Czułość (sensitivity) - wykrywanie prawdziwie pozytywnych przypadków
-   - Specyficzność (specificity) - unikanie fałszywych alarmów
-   - Precyzja klasyfikacji różnych typów ksenobiotyków
+2. Extraction of behavioral features
 
-3. **Użyteczności klinicznej**
-   - Intuicyjność interfejsu
-   - Integracja z workflow laboratorium/szpitala
-   - Czas wymagany na przeprowadzenie pełnej analizy
+   - Identification of characteristic movement patterns
+   - Analysis of motility changes associated with toxin exposure
+
+3. Training classification models
+   - Development of machine learning algorithms
+   - Optimization for sensitivity and specificity
+   - Validation on real and synthetic data
+
+### B - Engineering track - diagnostic application
+
+Development of a complete application to support clinical use of the system:
+
+#### System pipeline
+
+1. Loading video data – import of recordings with larvae
+2. Analysis – automatic processing by ML algorithms
+3. Prediction – classification of presence of xenobiotics
+4. Presentation of results – clear user interface
+
+#### User interface
+
+- Simple graphical interface
+- Intended for physicians and laboratory staff
+- Ability to run analysis in near real time
+- Fast access to diagnostic results
+
+### C - Simulation and data generation
+
+Additional component:
+
+- Simple larva simulation in Unity
+- Generation of synthetic data for ML models
+- Support for training when real data is limited
 
 ---
 
-## Model organizmu modelowego
+## 3. Methodology
 
-### Dlaczego _Galleria mellonella_?
+### System testing
 
-Larwy _Galleria mellonella_ (barczatki większej) są szeroko wykorzystywane w badaniach toksykologicznych ze względu na:
+The system will be tested with respect to:
 
-- ✅ Prostotę hodowli i niski koszt
-- ✅ Dobrze poznany układ odpornościowy
-- ✅ Wykrywalne zmiany behawioralne w odpowiedzi na substancje toksyczne
-- ✅ Akceptowalne alternatywne modele przed testami na kręgowcach
-- ✅ Krótki czas reakcji na bodźce chemiczne
+1. Performance
+
+   - Processing time for a single sample
+   - Optimization of compute resource usage
+
+2. Prediction accuracy
+
+   - Sensitivity – detection of true positive cases
+   - Specificity – avoidance of false alarms
+   - Precision for classifying different types of xenobiotics
+
+3. Clinical usability
+   - Intuitiveness of the interface
+   - Integration with laboratory/hospital workflows
+   - Time required to perform a full analysis
 
 ---
 
-## Innowacyjność
+## Model organism
 
-System LarvixON AI wprowadza nowatorskie podejście poprzez:
+### Why Galleria mellonella?
 
-1. **Kombinację biologii i AI** - wykorzystanie organizmów modelowych w połączeniu z zaawansowanymi algorytmami
-2. **Szybkość diagnostyki** - wyniki w czasie nieprzekraczającym 20 minut
-3. **Nieinwazyjność** - analiza próbki osocza zamiast bardziej inwazyjnych metod
-4. **Automatyzacja** - zmniejszenie obciążenia personelu medycznego
-5. **Skalowalność** - możliwość równoległego przetwarzania wielu próbek
+Galleria mellonella larvae are widely used in toxicology research because of:
+
+- Ease of breeding and low cost
+- Well-characterized immune system
+- Detectable behavioral changes in response to toxic substances
+- Suitability as an alternative model prior to vertebrate testing
+- Short reaction time to chemical stimuli
+
+---
+
+## Innovation
+
+The LarvixON AI system introduces an innovative approach by:
+
+1. Combining biology and AI – using model organisms together with advanced algorithms
+2. Fast diagnostics – results within 20 minutes
+3. Noninvasiveness – plasma analysis instead of more invasive procedures
+4. Automation – reducing workload for medical staff
+5. Scalability – parallel processing of multiple samples

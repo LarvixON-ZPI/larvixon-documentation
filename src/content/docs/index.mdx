@@ -1,6 +1,6 @@
 ---
-title: LarvixON AI - Dokumentacja Projektu
-description: System szybkiej diagnostyki toksyczności osocza z wykorzystaniem analizy behawioralnej larw i algorytmów uczenia maszynowego
+title: LarvixON AI - project documentation
+description: Rapid plasma toxicity diagnostic system using behavioral analysis of larvae and machine learning algorithms
 ---
 
 import {
@@ -11,81 +11,81 @@ import {
   Aside,
 } from "@astrojs/starlight/components";
 
-## Witamy w dokumentacji LarvixON AI 🦋
+## Welcome to the LarvixON AI documentation
 
-**Politechnika Wrocławska**  
-**Wydział Informatyki i Telekomunikacji**  
-Kierunek: IST  
-**Zespołowe Przedsięwzięcie Informatyczne**
+**Wrocław University of Science and Technology**  
+**Faculty of Computer Science and Telecommunications**  
+Program: IST  
+**Team project**
 
-System LarvixON AI to nowatorskie rozwiązanie diagnostyczne wykorzystujące sztuczną inteligencję do wykrywania ksenobiotyków w osoczu pacjentów poprzez analizę wzorców ruchowych larw _Galleria mellonella_.
+LarvixON AI is an innovative diagnostic solution that uses artificial intelligence to detect xenobiotics in patient plasma by analyzing movement patterns of Galleria mellonella larvae.
 
 <Aside type="tip">
-  Celem projektu jest osiągnięcie wysokiej czułości i specyficzności
-  klasyfikacji przy czasie analizy nieprzekraczającym **20 minut**.
+  The project aims to achieve high sensitivity and specificity of the classifier
+  with an analysis time not exceeding 20 minutes.
 </Aside>
 
-## Szybki start
+## Quick start
 
 <CardGrid>
   <LinkCard
-    title="Opis projektu"
-    href="/project/overview/"
-    description="Poznaj cele i zakres projektu"
+    title="Project overview"
+    href="project/overview/"
+    description="Read the project goals and scope"
   />
   <LinkCard
-    title="Technologie"
-    href="/project/technologies/"
-    description="Stack technologiczny i narzędzia"
+    title="Technologies"
+    href="project/technologies/"
+    description="Technology stack and tools"
   />
   <LinkCard
-    title="Roadmapa"
-    href="/project/roadmap/"
-    description="Plan i kamienie milowe projektu"
+    title="Project roadmap"
+    href="project/roadmap/"
+    description="Project plan and milestones"
   />
   <LinkCard
-    title="Zespół"
-    href="/project/team/"
-    description="Członkowie zespołu i opiekun"
+    title="Project team"
+    href="project/team/"
+    description="Team members and supervisor"
   />
 </CardGrid>
 
-## O projekcie
+## About the project
 
-Projekt LarvixON AI opracowuje szybki system diagnostyczny oparty na AI, który analizuje wzorce ruchowe larw w celu identyfikacji charakterystycznych reakcji organizmu na toksyczne substancje. System łączy:
+LarvixON AI develops a rapid diagnostic system based on AI that analyzes larval movement patterns to identify characteristic organism responses to toxic substances. The system combines:
 
-- 🔬 **Badania naukowe** - analiza danych ruchowych i ekstrakcja cech behawioralnych
-- 💻 **Inżynieria oprogramowania** - aplikacja diagnostyczna z pełnym pipeline
-- 🤖 **Uczenie maszynowe** - modele klasyfikacyjne do wykrywania ksenobiotyków
-- 🏥 **Zastosowania medyczne** - wsparcie diagnostyczne w czasie rzeczywistym
+- Scientific research – movement data analysis and behavioral feature extraction
+- Software engineering – diagnostic application with a complete pipeline
+- Machine learning – classification models for xenobiotic detection
+- Medical use cases – diagnostic support in near real time
 
-## Główne komponenty
+## Main components
 
 <CardGrid>
   <Card title="Backend (Django)" icon="seti:django">
-    Skalowalny backend z API REST, zarządzanie danymi i logika biznesowa
+    Scalable backend with REST API, data management and business logic
   </Card>
   <Card title="Frontend (Flutter)" icon="seti:flutter">
-    Wieloplatformowy interfejs użytkownika dla lekarzy i laborantów
+    Multi-platform user interface for physicians and lab staff
   </Card>
-  <Card title="Model ML (Python)" icon="seti:python">
-    Algorytmy uczenia maszynowego do analizy wzorców behawioralnych
+  <Card title="ML model (Python)" icon="seti:python">
+    Machine learning algorithms for behavioral pattern analysis
   </Card>
-  <Card title="Symulacja (Unity)" icon="seti:unity">
-    Generowanie syntetycznych danych treningowych
+  <Card title="Simulation (Unity)" icon="seti:unity">
+    Generation of synthetic training data
   </Card>
 </CardGrid>
 
-## Infrastruktura
+## Infrastructure
 
-- **Wrocławskie Centrum Superkomputerowe (WCSS)** - moc obliczeniowa dla ML
-- **PostgreSQL** - baza danych systemu
-- **Docker** - konteneryzacja aplikacji
-- **Microsoft Azure** - hosting i usługi chmurowe
-- **Roboflow** - anotacja danych wideo
+- Wrocław Supercomputing Center (WCSS) – compute for ML
+- PostgreSQL – system database
+- Docker – containerization
+- Microsoft Azure – hosting and cloud services
+- Roboflow – video data annotation
 
-## Status projektu
+## Project status
 
-Projekt jest obecnie w **Fazie III: Integracja i Optymalizacja** (październik 2025). Trwają prace nad połączeniem wszystkich komponentów systemu oraz optymalizacją modeli uczenia maszynowego na rzeczywistych danych.
+The project is currently in phase III: integration and optimization (October 2025). Work is ongoing to connect all system components and optimize ML models with real data.
 
 ![](./../../assets/solvro/what-we-do.png)
