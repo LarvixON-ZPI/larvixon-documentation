@@ -1,9 +1,7 @@
 ---
-title: Roadmapa Projektu
+title: Roadmapa projektu
 description: Harmonogram i kamienie milowe projektu LarvixON AI (2025)
 ---
-
-# Roadmapa projektu LarvixON AI
 
 Projekt realizowany jest w **trzech głównych fazach** od czerwca do października 2025 roku. Każda faza koncentruje się na różnych aspektach systemu, od fundamentów po pełną integrację i optymalizację.
 
@@ -11,11 +9,11 @@ Projekt realizowany jest w **trzech głównych fazach** od czerwca do październ
 
 ## 📅 Przegląd czasowy
 
-| Faza         | Okres              | Status        |
-| ------------ | ------------------ | ------------- |
-| **Faza I**   | 15.06 - 13.09.2025 | ✅ Zakończona |
-| **Faza II**  | 20.09 - 30.09.2025 | ✅ Zakończona |
-| **Faza III** | 05.10 - 31.10.2025 | 🔄 W trakcie  |
+| Faza         | Okres              | Status     |
+| ------------ | ------------------ | ---------- |
+| **Faza I**   | 15.06 - 13.09.2025 | Zakończona |
+| **Faza II**  | 20.09 - 30.09.2025 | Zakończona |
+| **Faza III** | 05.10 - 31.10.2025 | W trakcie  |
 
 ---
 
@@ -91,6 +89,8 @@ Projekt realizowany jest w **trzech głównych fazach** od czerwca do październ
 ## 🚀 Faza II: Backend, Frontend i wstępny model ML
 
 **Okres:** 20 września - 30 września 2025
+
+<!-- markdownlint-disable MD024 -->
 
 ### Cele główne
 

@@ -1,9 +1,7 @@
 ---
-title: Zespół Projektu
+title: Zespół projektu
 description: Członkowie zespołu LarvixON AI i opiekun naukowy
 ---
-
-# Zespół LarvixON AI
 
 Projekt LarvixON AI jest realizowany przez zespół studentów Wydziału Informatyki i Telekomunikacji Politechniki Wrocławskiej w ramach Zespołowego Przedsięwzięcia Informatycznego.
 

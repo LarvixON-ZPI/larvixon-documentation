@@ -1,9 +1,7 @@
 ---
-title: Opis Projektu
+title: Opis projektu
 description: Szczegółowy opis systemu LarvixON AI - cele, zakres i metodologia
 ---
-
-# System LarvixON AI
 
 ## Informacje podstawowe
 

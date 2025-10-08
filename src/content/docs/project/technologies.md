@@ -1,9 +1,7 @@
 ---
-title: Stack Technologiczny
+title: Stack technologiczny
 description: Technologie i narzędzia wykorzystywane w projekcie LarvixON AI
 ---
-
-# Technologie używane w projekcie
 
 System LarvixON AI wykorzystuje szeroki zakres nowoczesnych technologii, od obliczeń wysokiej wydajności, przez uczenie maszynowe, po wieloplatformowe aplikacje webowe i mobilne.
 
@@ -365,7 +363,7 @@ services:
 
 ### Architektura systemu
 
-```
+```text
 ┌─────────────┐
 │   Flutter   │ ← Interfejs użytkownika
 │  (Frontend) │
