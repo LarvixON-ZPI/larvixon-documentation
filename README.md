@@ -1,54 +1,50 @@
-# Dokumentacja programistyczna Solvro
-
-Teoretycznie powinno się tu znaleźć wszystko co powinieneś/aś wiedzieć o programowaniu u nas, w praktyce jest bardzo work in progress 😭
+# Larvixon docs
 
 ## FAQ
 
-- Jak dodać nową stronę?
+- How to add a new site?
 
-  1. Dodaj nowy plik .md folderze `content/docs/solvro/` np. `mario.md`
-  2. W pliku `mario.md` musisz napisać tytuł i opis jako fronmatter, przykładowo:
+  1. Create a new .md file in the `src/content/docs/project/` folder, e.g. `mario.md`
+  2. In the `mario.md` file, you need to write the title and description as frontmatter, for example:
 
   ```md
   ---
   title: Gaming section
-  description: Oto jak w Solvro gramy w mario.
+  description: This is the gaming section.
   ---
 
-  Heeej, to jest treść strony!
+  Hello this is the content!
   ```
 
-## Jak odpalić?
+  If adding new section, you need to also edit `astro.config.mjs`
 
-Wymagania:
+## running locally
+
+Requirements:
 
 - Node.js 20.x
 
-1. Instalujemy dependencies
+1. Install dependencies
 
    ```bash
-   npm install
+   npm i
    ```
 
-2. Odpalamy lokalny serwer
+2. Start local server
 
    ```bash
    npm run dev
    ```
 
-## 🧞 Commands
+## npm commands
 
 All commands are run from the root of the project, from a terminal:
 
 | Command                   | Action                                           |
 | :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
+| `npm i`                   | Installs dependencies                            |
 | `npm run dev`             | Starts local dev server at `localhost:4321`      |
 | `npm run build`           | Build your production site to `./dist/`          |
 | `npm run preview`         | Preview your build locally, before deploying     |
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro documentation](https://docs.astro.build), or jump into the [Astro Discord server](https://astro.build/chat).
