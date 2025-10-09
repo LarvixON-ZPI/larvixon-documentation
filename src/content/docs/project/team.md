@@ -15,7 +15,7 @@ Role: project supervisor
 
 Affiliation: Wrocław University of Science and Technology, Faculty of Computer Science and Telecommunications
 
-Dr inż. Natalia Piórkowska provides academic supervision for the project, supporting the team in research methodology, machine learning and ensuring compliance with academic requirements.
+Dr inż. Natalia Piórkowska provides academic supervision for the project, supporting the team in research methodology, machine learning and ensuring compliance with academic requirements. She has expertise in data science and AI applications in biomedical contexts.
 
 ---
 
@@ -43,7 +43,7 @@ Role in project: ML engineer
 
 Areas of responsibility:
 
-- Larvixon machine learning models
+- Larvixon ML model
 
 Technologies:
 
@@ -68,7 +68,7 @@ Technologies:
 
 ### Łuszczek Patryk
 
-role in project: frontend developr
+Role in project: frontend developer
 
 Areas of responsibility:
 
@@ -88,10 +88,10 @@ The team follows an agile methodology with regular sprints and status meetings.
 
 Practices:
 
-- weekly team meetings
-- two-week sprints
-- code reviews and pair programming
-- retrospectives and continuous improvement
+- Weekly team meetings
+- Two-week sprints
+- Code reviews and pair programming
+- Retrospectives and continuous improvement
 
 ### Collaboration tools
 
@@ -100,7 +100,7 @@ Practices:
   - GitHub Actions for CI/CD
   - GitHub Pages for hosting
 - Discord – team communication
-- Azure AWS – cloud services and hosting
+- xxx – cloud services and hosting
 
 ## Academic project
 
@@ -115,11 +115,11 @@ Semester: winter
 
 The project serves not only to develop an advanced diagnostic system but also to:
 
-- apply machine learning knowledge in practice
-- develop teamwork skills in software development
-- learn the full software development lifecycle
-- combine computer science with medical applications
-- manage an IT project from concept to deployment
+- Apply machine learning knowledge in practice
+- Develop teamwork skills in software development
+- Learn the full software development lifecycle
+- Combine computer science with medical applications
+- Manage an IT project from concept to deployment
 
 ---
 

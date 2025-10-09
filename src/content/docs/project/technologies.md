@@ -206,10 +206,6 @@ Purpose: generate synthetic training data
    - Controlled experimental conditions
    - Large datasets without biological costs
 
-3. Simulation releases
-   - v1.0.0 — initial test dataset (2025-09-13)
-   - v1.1.0 — full data generation (2025-09-30)
-
 Importance for the project:
 
 - Complements limited real-world data
@@ -234,8 +230,8 @@ Platform for managing visual data and annotations.
 ### Process
 
 1. Upload videos
-2. Automatic / manual annotation of larvae
-3. Export in ML formats (YOLO, COCO, etc.)
+2. Manual annotation of larvae
+3. Export in ML formats xxx
 4. Integration with the training pipeline
 
 ---
@@ -305,11 +301,9 @@ The LarvixON AI system is composed of separate containers:
 
 ---
 
-## Cloud hosting — Microsoft Azure
+## Cloud hosting — xxx
 
-### Azure
-
-Microsoft cloud platform for hosting applications and services.
+xxx cloud platform for hosting applications and services.
 
 ### Services used
 
@@ -325,17 +319,7 @@ Microsoft cloud platform for hosting applications and services.
    - Database backups
    - Archiving results
 
-3. Database
-
-   - Azure Database for PostgreSQL
-   - Managed database solution
-
-4. ML & AI
-
-   - Azure Machine Learning (potential)
-   - Integration with analytics services
-
-### Azure benefits
+### xxx benefits
 
 - High availability — strong uptime guarantees
 - Scalability — flexible resources

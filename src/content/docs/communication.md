@@ -11,7 +11,7 @@ description: Contact information and communication channels for the LarvixON AI 
 
 ### Documentation
 
-- docs: [Larvixon Documentation](https://larvixon-zpi.github.io/larvixon-documentation/)
+- Docs: [Larvixon Documentation](https://larvixon-zpi.github.io/larvixon-documentation/)
 
 ### Project email
 
