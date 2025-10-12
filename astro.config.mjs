@@ -40,8 +40,8 @@ export default defineConfig({
       customCss: ["./src/tailwind.css"],
       tableOfContents: true,
       logo: {
-        light: "./src/assets/logo_dark.png",
-        dark: "./src/assets/logo_white.png",
+        light: "./src/assets/logo_dark_thin.svg",
+        dark: "./src/assets/logo_light_thin.svg",
         replacesTitle: true,
       },
       lastUpdated: true,

@@ -1,6 +1,6 @@
 ---
 title: Project overview
-description: Detailed description of the LarvixON AI system - goals, scope and methodology
+description: Detailed description of the LarvixON system - goals, scope and methodology
 ---
 
 ## Basic information
@@ -10,7 +10,7 @@ description: Detailed description of the LarvixON AI system - goals, scope and m
 Program: IST  
 **Team project**
 
-**Title:** LarvixON AI system – rapid plasma toxicity diagnostics using behavioral analysis of larvae and machine learning algorithms
+**Title:** LarvixON system – rapid plasma toxicity diagnostics using behavioral analysis of larvae and machine learning algorithms
 
 **Supervisor:** dr inż. Natalia Piórkowska
 
@@ -132,7 +132,7 @@ Galleria mellonella larvae are widely used in toxicology research because of:
 
 ## Innovation
 
-The LarvixON AI system introduces an innovative approach by:
+The LarvixON system introduces an innovative approach by:
 
 1. Combining biology and AI – using model organisms together with advanced algorithms
 2. Fast diagnostics – results within 20 minutes

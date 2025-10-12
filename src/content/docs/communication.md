@@ -1,6 +1,6 @@
 ---
 title: Communication
-description: Contact information and communication channels for the LarvixON AI project
+description: Contact information and communication channels for the LarvixON project
 ---
 
 ## Contact

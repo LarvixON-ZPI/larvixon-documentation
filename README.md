@@ -1,6 +1,6 @@
 # Larvixon docs
 
-This is the documentation for the LarvixON AI project.
+This is the documentation for the LarvixON project.
 
 It is practically a fork of the great [Solvro docs](https://github.com/solvro/web-solvro-docs).
 

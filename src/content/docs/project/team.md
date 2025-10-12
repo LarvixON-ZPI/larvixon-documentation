@@ -1,9 +1,9 @@
 ---
 title: Project team
-description: Members of the LarvixON AI project team and academic supervisor
+description: Members of the LarvixON project team and academic supervisor
 ---
 
-The LarvixON AI project is carried out by a team of students from the Faculty of Computer Science and Telecommunications at Wrocław University of Science and Technology as part of a team project.
+The LarvixON project is carried out by a team of students from the Faculty of Computer Science and Telecommunications at Wrocław University of Science and Technology as part of a team project.
 
 ---
 
@@ -125,7 +125,7 @@ The project serves not only to develop an advanced diagnostic system but also to
 
 ## Acknowledgements
 
-The LarvixON AI team thanks:
+The LarvixON team thanks:
 
 - Dr inż. Natalia Piórkowska – for academic support and mentoring
 - Wrocław Supercomputing Center (WCSS) – for providing compute resources
