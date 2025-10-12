@@ -38,7 +38,7 @@ export const { getStaticPaths, GET } = OGImageRoute({
       fonts: ["./src/assets/space_grotesk.ttf"],
       padding: 100,
       logo: {
-        path: "./src/assets/docs_logo.png",
+        path: "./src/assets/docs_logo.svg",
       },
     };
   },
