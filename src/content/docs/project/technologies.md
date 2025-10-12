@@ -1,9 +1,9 @@
 ---
 title: Technology stack
-description: Technologies and tools used in the LarvixON AI project
+description: Technologies and tools used in the LarvixON project
 ---
 
-The LarvixON AI system uses a broad set of modern technologies, from high-performance computing and machine learning to cross-platform web and mobile applications.
+The LarvixON system uses a broad set of modern technologies, from high-performance computing and machine learning to cross-platform web and mobile applications.
 
 ---
 
@@ -284,7 +284,7 @@ Platform for containerizing applications.
 
 ### Container architecture
 
-The LarvixON AI system is composed of separate containers:
+The LarvixON system is composed of separate containers:
 
 1. Backend container (Django)
 2. Frontend container (Flutter web build)
