@@ -1,0 +1,89 @@
+---
+title: LarvixON - project documentation
+description: Rapid plasma toxicity diagnostic system using behavioral analysis of larvae and machine learning algorithms
+---
+
+import {
+  Steps,
+  Card,
+  CardGrid,
+  LinkCard,
+  Aside,
+} from "@astrojs/starlight/components";
+
+## Welcome to the LarvixON documentation
+
+**Wrocław University of Science and Technology**  
+**Faculty of Computer Science and Telecommunications**  
+Program: IST  
+**Team project**
+
+LarvixON is an innovative diagnostic solution that uses artificial intelligence to detect xenobiotics in patient plasma by analyzing movement patterns of Galleria mellonella larvae.
+
+<Aside type="tip">
+  The project aims to achieve high sensitivity and specificity of the classifier
+  with an analysis time not exceeding 20 minutes.
+</Aside>
+
+## Quick start
+
+<CardGrid>
+  <LinkCard
+    title="Project overview"
+    href="project/overview/"
+    description="Read the project goals and scope"
+  />
+  <LinkCard
+    title="Technologies"
+    href="project/technologies/"
+    description="Technology stack and tools"
+  />
+  <LinkCard
+    title="Project roadmap"
+    href="project/roadmap/"
+    description="Project plan and milestones"
+  />
+  <LinkCard
+    title="Project team"
+    href="project/team/"
+    description="Team members and supervisor"
+  />
+</CardGrid>
+
+## About the project
+
+LarvixON develops a rapid diagnostic system based on AI that analyzes larval movement patterns to identify characteristic organism responses to toxic substances. The system combines:
+
+- Scientific research – movement data analysis and behavioral feature extraction
+- Software engineering – diagnostic application with a complete pipeline
+- Machine learning – classification models for xenobiotic detection
+- Medical use cases – diagnostic support in near real time
+
+## Technology Stack
+
+### Main components
+
+<CardGrid>
+  <Card title="Backend (Django, Python)">
+    Scalable backend with REST API, data management and business logic
+  </Card>
+  <Card title="Frontend (Flutter)">
+    Multi-platform user interface for physicians and lab staff
+  </Card>
+  <Card title="ML model (Python)">
+    Machine learning algorithms for behavioral pattern analysis
+  </Card>
+  <Card title="Simulation (Unity)">Generation of synthetic training data</Card>
+</CardGrid>
+
+### Infrastructure
+
+- Wrocław Supercomputing Center (WCSS) – compute for ML
+- PostgreSQL – system database
+- Docker – containerization
+- xxx – hosting and cloud services
+- Roboflow – video data annotation
+
+## Project status
+
+The project is currently in phase III: integration and optimization (October 2025). Work is ongoing to connect all system components and optimize ML models with real data.

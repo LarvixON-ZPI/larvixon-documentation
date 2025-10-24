@@ -5,7 +5,7 @@ description: Timeline and milestones for the LarvixON project (2025)
 
 Project is carried out in five main phases from June to December 2025. Each phase focuses on different aspects of the system, from foundations to full integration and optimization.
 
-![Project timeline](../../../assets/roadmap/roadmap.png)
+![Project timeline](../../../../assets/roadmap/roadmap.png)
 
 ---
 
