@@ -28,7 +28,7 @@ export default defineConfig({
         //   exclude: ["http://localhost:4321", "/larvixon-documentation/**"],
         // }),
       ],
-      defaultLocale: "pl",
+      defaultLocale: "en",
       locales: {
         en: {
           label: "English",
