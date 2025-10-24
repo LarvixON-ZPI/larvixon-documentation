@@ -132,6 +132,7 @@ The LarvixON team thanks:
 - Dr inż. Natalia Piórkowska – for academic support and mentoring
 - Wrocław Supercomputing Center (WCSS) – for providing compute resources
 - Wrocław University of Science and Technology – for enabling the project
-- Uniwersytet Medyczny - for providing biological data
+- Uniwersytet Medyczny – for providing biological data
+- Solvro – for open sourcing their great documentation site
 
 ---

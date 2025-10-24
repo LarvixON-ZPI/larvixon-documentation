@@ -132,6 +132,7 @@ Zespół LarvixON dziękuje:
 - Dr inż. Natalii Piórkowskiej – za wsparcie akademickie i mentoring
 - Wrocławskiemu Centrum Sieciowo-Superkomputerowemu (WCSS) – za udostępnienie zasobów obliczeniowych
 - Politechnice Wrocławskiej – za umożliwienie realizacji projektu
-- Uniwersytetowi Medycznemu - za dostarczenie danych biologicznych
+- Uniwersytetowi Medycznemu – za dostarczenie danych biologicznych
+- Solvro – za upublicznienie kodu swojej doskonałej strony dokumentacyjnej
 
 ---
