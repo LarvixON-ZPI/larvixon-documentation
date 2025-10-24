@@ -1,141 +1,141 @@
 ---
-title: Project overview
-description: Detailed description of the LarvixON system - goals, scope and methodology
+title: Przegląd projektu
+description: Szczegółowy opis systemu LarvixON - cele, zakres i metodologia
 ---
 
-## Basic information
+## Informacje podstawowe
 
-**Wrocław University of Science and Technology**  
-**Faculty of Computer Science and Telecommunications**  
-Program: IST  
-**Team project**
+**Politechnika Wrocławska**  
+**Wydział Informatyki i Telekomunikacji**  
+Kierunek: IST  
+**Projekt zespołowy**
 
-**Title:** LarvixON system – rapid plasma toxicity diagnostics using behavioral analysis of larvae and machine learning algorithms
+**Tytuł:** System LarvixON – szybka diagnostyka toksyczności plazmy wykorzystująca analizę behawioralną larw i algorytmy uczenia maszynowego
 
-**Supervisor:** dr inż. Natalia Piórkowska
+**Promotor:** dr inż. Natalia Piórkowska
 
-**Year:** 2025
-
----
-
-## 1. Synthetic description of the project
-
-### Goal of the project
-
-The goal of the project is to develop a rapid diagnostic system based on artificial intelligence that detects xenobiotics in patient plasma. The system analyzes movement patterns of Galleria mellonella larvae exposed to plasma samples to identify characteristic organism responses to toxic substances.
-
-### Key assumptions
-
-- Analysis time: not exceeding 20 minutes
-- High sensitivity and specificity of classification
-- Detection of subtle changes in larval motility
-- Detection of drugs, narcotics, toxins, or pathogens
-
-### Ultimate objective
-
-Implement an innovative diagnostic method that contributes to:
-
-- Improved treatment effectiveness
-- Reduced time to medical intervention in life-threatening situations
-- Rapid identification of toxic substances in a patient's organism
+**Rok:** 2025
 
 ---
 
-## 2. Project scope
+## 1. Syntetyczny opis projektu
 
-The project includes two parallel workstreams:
+### Cel projektu
 
-### A - Research track - machine learning algorithms
+Celem projektu jest opracowanie szybkiego systemu diagnostycznego opartego na sztucznej inteligencji, który wykrywa ksenobiotyki w plazmie pacjenta. System analizuje wzorce ruchu larw Galleria mellonella eksponowanych na próbki plazmy w celu identyfikacji charakterystycznych reakcji organizmu na substancje toksyczne.
 
-Focus areas:
+### Kluczowe założenia
 
-1. Analysis of movement data of Galleria mellonella larvae
+- Czas analizy: nieprzekraczający 20 minut
+- Wysoka czułość i specyficzność klasyfikacji
+- Wykrywanie subtelnych zmian w ruchliwości larw
+- Wykrywanie leków, narkotyków, toksyn lub patogenów
 
-   - Preprocessing of video recordings of larvae
-   - Tracking of movement and behavior
+### Cel ostateczny
 
-2. Extraction of behavioral features
+Wdrożenie innowacyjnej metody diagnostycznej, która przyczynia się do:
 
-   - Identification of characteristic movement patterns
-   - Analysis of motility changes associated with toxin exposure
-
-3. Training classification models
-   - Development of machine learning algorithms
-   - Optimization for sensitivity and specificity
-   - Validation on real and synthetic data
-
-### B - Engineering track - diagnostic application
-
-Development of a complete application to support clinical use of the system:
-
-#### System pipeline
-
-1. Loading video data – import of recordings with larvae
-2. Analysis – automatic processing by ML algorithms
-3. Prediction – classification of presence of xenobiotics
-4. Presentation of results – clear user interface
-
-#### User interface
-
-- Simple graphical interface
-- Intended for physicians and laboratory staff
-- Ability to run analysis in near real time
-- Fast access to diagnostic results
-
-### C - Simulation and data generation
-
-Additional component:
-
-- Simple larva simulation in Unity
-- Generation of synthetic data for ML models
-- Support for training when real data is limited
+- Poprawy skuteczności leczenia
+- Skrócenia czasu do interwencji medycznej w sytuacjach zagrożenia życia
+- Szybkiej identyfikacji substancji toksycznych w organizmie pacjenta
 
 ---
 
-## 3. Methodology
+## 2. Zakres projektu
 
-### System testing
+Projekt obejmuje dwa równoległe nurty pracy:
 
-The system will be tested with respect to:
+### A - Algorytmy uczenia maszynowego
 
-1. Performance
+Obszary zainteresowania:
 
-   - Processing time for a single sample
-   - Optimization of compute resource usage
+1. Analiza danych o ruchu larw Galleria mellonella
 
-2. Prediction accuracy
+   - Przetwarzanie wstępne nagrań wideo larw
+   - Śledzenie ruchu i zachowania
 
-   - Sensitivity – detection of true positive cases
-   - Specificity – avoidance of false alarms
-   - Precision for classifying different types of xenobiotics
+2. Ekstrakcja cech behawioralnych
 
-3. Clinical usability
-   - Intuitiveness of the interface
-   - Integration with laboratory/hospital workflows
-   - Time required to perform a full analysis
+   - Identyfikacja charakterystycznych wzorców ruchu
+   - Analiza zmian ruchliwości związanych z ekspozycją na toksyny
+
+3. Trenowanie modeli klasyfikacyjnych
+   - Opracowanie algorytmów uczenia maszynowego
+   - Optymalizacja pod kątem czułości i specyficzności
+   - Walidacja na danych rzeczywistych i syntetycznych
+
+### B - Aplikacja diagnostyczna
+
+Rozwój kompletnej aplikacji wspierającej kliniczne wykorzystanie systemu:
+
+#### Pipeline systemu
+
+1. Ładowanie danych wideo – import nagrań z larwami
+2. Analiza – automatyczne przetwarzanie przez algorytmy ML
+3. Predykcja – klasyfikacja obecności ksenobiotyków
+4. Prezentacja wyników – przejrzysty interfejs użytkownika
+
+#### Interfejs użytkownika
+
+- Prosty interfejs graficzny
+- Przeznaczony dla lekarzy i personelu laboratoryjnego
+- Możliwość uruchamiania analiz w czasie zbliżonym do rzeczywistego
+- Szybki dostęp do wyników diagnostycznych
+
+### C - Symulacja i generowanie danych
+
+Dodatkowy komponent:
+
+- Prosta symulacja larw w Unity
+- Generowanie syntetycznych danych dla modeli ML
+- Wsparcie treningu przy ograniczonej ilości rzeczywistych danych
 
 ---
 
-## Model organism
+## 3. Metodologia
 
-### Why Galleria mellonella?
+### Testowanie systemu
 
-Galleria mellonella larvae are widely used in toxicology research because of:
+System będzie testowany pod poniższymi względami:
 
-- Ease of breeding and low cost
-- Well-characterized immune system
-- Detectable behavioral changes in response to toxic substances
-- Suitability as an alternative model prior to vertebrate testing
-- Short reaction time to chemical stimuli
+1. Wydajność
+
+   - Czas przetwarzania pojedynczej próbki
+   - Optymalizacja wykorzystania zasobów obliczeniowych
+
+2. Dokładność predykcji
+
+   - Czułość – wykrywanie prawdziwie pozytywnych przypadków
+   - Specyficzność – unikanie fałszywych alarmów
+   - Precyzja klasyfikacji różnych typów ksenobiotyków
+
+3. Użyteczność kliniczna
+   - Intuicyjność interfejsu
+   - Integracja z przepływami pracy laboratorium/szpitala
+   - Czas wymagany do przeprowadzenia pełnej analizy
 
 ---
 
-## Innovation
+## Organizm modelowy
 
-The LarvixON system introduces an innovative approach by:
+### Dlaczego Galleria mellonella?
 
-1. Combining biology and AI – using model organisms together with advanced algorithms
-2. Fast diagnostics – results within 20 minutes
-3. Noninvasiveness – plasma analysis instead of more invasive procedures
-4. Automation – reducing workload for medical staff
-5. Scalability – parallel processing of multiple samples
+Larwy Galleria mellonella są szeroko wykorzystywane w badaniach toksykologicznych ze względu na:
+
+- Łatwość hodowli i niski koszt
+- Dobrze scharakteryzowany system immunologiczny
+- Wykrywalne zmiany behawioralne w odpowiedzi na substancje toksyczne
+- Przydatność jako model alternatywny przed testami na kręgowcach
+- Krótki czas reakcji na bodźce chemiczne
+
+---
+
+## Innowacyjność
+
+System LarvixON wprowadza innowacyjne podejście poprzez:
+
+1. Łączenie biologii i AI – wykorzystanie organizmów modelowych wraz z zaawansowanymi algorytmami
+2. Szybka diagnostyka – wyniki w ciągu 20 minut
+3. Nieinwazyjność – analiza plazmy zamiast bardziej inwazyjnych procedur
+4. Automatyzacja – zmniejszenie obciążenia pracą personelu medycznego
+5. Skalowalność – równoległe przetwarzanie wielu próbek

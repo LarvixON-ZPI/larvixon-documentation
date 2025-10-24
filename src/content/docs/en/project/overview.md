@@ -45,7 +45,7 @@ Implement an innovative diagnostic method that contributes to:
 
 The project includes two parallel workstreams:
 
-### A - Research track - machine learning algorithms
+### A - Machine learning algorithms
 
 Focus areas:
 
@@ -64,7 +64,7 @@ Focus areas:
    - Optimization for sensitivity and specificity
    - Validation on real and synthetic data
 
-### B - Engineering track - diagnostic application
+### B - Diagnostic application
 
 Development of a complete application to support clinical use of the system:
 

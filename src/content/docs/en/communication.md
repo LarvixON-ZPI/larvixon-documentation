@@ -15,4 +15,4 @@ description: Contact information and communication channels for the LarvixON pro
 
 ### Project email
 
-- [to be filled - project contact email]
+- [TODO - project contact email]

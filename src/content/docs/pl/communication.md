@@ -1,18 +1,18 @@
 ---
-title: Communication
-description: Contact information and communication channels for the LarvixON project
+title: Komunikacja
+description: Informacje kontaktowe i kanały komunikacji dla projektu LarvixON
 ---
 
-## Contact
+## Kontakt
 
-### Project repositories
+### Repozytoria projektu
 
 - GitHub: [[LarvixON-ZPI](https://github.com/orgs/LarvixON-ZPI/repositories)]
 
-### Documentation
+### Dokumentacja
 
-- Docs: [Larvixon Documentation](https://larvixon-zpi.github.io/larvixon-documentation/)
+- Docs: [Dokumentacja Larvixon](https://larvixon-zpi.github.io/larvixon-documentation/)
 
-### Project email
+### Email projektu
 
-- [to be filled - project contact email]
+- [TODO - email kontaktowy projektu]

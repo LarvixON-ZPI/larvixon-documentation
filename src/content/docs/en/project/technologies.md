@@ -61,7 +61,7 @@ Python is the main language used in the backend and ML parts of the project.
 - pandas — tabular data manipulation and analysis
 - scikit-learn — classical machine learning algorithms
 - PyTorch — deep learning and neural networks
-- OpenCV (likely) — image and video processing
+- OpenCV — image and video processing
 - Matplotlib / Seaborn — data visualization
 
 ---
@@ -231,7 +231,7 @@ Platform for managing visual data and annotations.
 
 1. Upload videos
 2. Manual annotation of larvae
-3. Export in ML formats xxx
+3. Export in ML formats TODO
 4. Integration with the training pipeline
 
 ---
@@ -301,9 +301,9 @@ The LarvixON system is composed of separate containers:
 
 ---
 
-## Cloud hosting — xxx
+## Cloud hosting — TODO
 
-xxx cloud platform for hosting applications and services.
+TODO cloud platform for hosting applications and services.
 
 ### Services used
 
@@ -319,7 +319,7 @@ xxx cloud platform for hosting applications and services.
    - Database backups
    - Archiving results
 
-### xxx benefits
+### TODO benefits
 
 - High availability — strong uptime guarantees
 - Scalability — flexible resources
@@ -332,6 +332,8 @@ xxx cloud platform for hosting applications and services.
 ## Component integration
 
 ### System architecture
+
+TODO: a graphic representation
 
 ```text
 ┌─────────────┐

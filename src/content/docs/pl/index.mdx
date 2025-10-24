@@ -1,6 +1,6 @@
 ---
-title: LarvixON - project documentation
-description: Rapid plasma toxicity diagnostic system using behavioral analysis of larvae and machine learning algorithms
+title: LarvixON - dokumentacja projektu
+description: Szybki system diagnostyczny toksyczności plazmy wykorzystujący analizę behawioralną larw i algorytmy uczenia maszynowego
 ---
 
 import {
@@ -11,79 +11,82 @@ import {
   Aside,
 } from "@astrojs/starlight/components";
 
-## Welcome to the LarvixON documentation
+## Witamy w dokumentacji LarvixON
 
-**Wrocław University of Science and Technology**  
-**Faculty of Computer Science and Telecommunications**  
-Program: IST  
-**Team project**
+**Politechnika Wrocławska**  
+**Wydział Informatyki i Telekomunikacji**  
+Kierunek: IST  
+**Projekt zespołowy**
 
-LarvixON is an innovative diagnostic solution that uses artificial intelligence to detect xenobiotics in patient plasma by analyzing movement patterns of Galleria mellonella larvae.
+LarvixON to innowacyjne rozwiązanie diagnostyczne, które wykorzystuje sztuczną inteligencję do wykrywania ksenobiotyków w plazmie pacjenta poprzez analizę wzorców ruchu larw Galleria mellonella.
 
 <Aside type="tip">
-  The project aims to achieve high sensitivity and specificity of the classifier
-  with an analysis time not exceeding 20 minutes.
+  Projekt ma na celu osiągnięcie wysokiej czułości i specyficzności
+  klasyfikatora przy czasie analizy nieprzekraczającym 20 minut.
 </Aside>
 
-## Quick start
+## Szybki start
 
 <CardGrid>
   <LinkCard
-    title="Project overview"
+    title="Przegląd projektu"
     href="project/overview/"
-    description="Read the project goals and scope"
+    description="Zapoznaj się z celami i zakresem projektu"
   />
   <LinkCard
-    title="Technologies"
+    title="Technologie"
     href="project/technologies/"
-    description="Technology stack and tools"
+    description="Stos technologiczny i narzędzia"
   />
   <LinkCard
-    title="Project roadmap"
+    title="Harmonogram projektu"
     href="project/roadmap/"
-    description="Project plan and milestones"
+    description="Plan projektu i kamienie milowe"
   />
   <LinkCard
-    title="Project team"
+    title="Zespół projektu"
     href="project/team/"
-    description="Team members and supervisor"
+    description="Członkowie zespołu i promotor"
   />
 </CardGrid>
 
-## About the project
+## O projekcie
 
-LarvixON develops a rapid diagnostic system based on AI that analyzes larval movement patterns to identify characteristic organism responses to toxic substances. The system combines:
+LarvixON rozwija szybki system diagnostyczny oparty na AI, który analizuje wzorce ruchu larw w celu identyfikacji charakterystycznych reakcji organizmu na substancje toksyczne. System łączy:
 
-- Scientific research – movement data analysis and behavioral feature extraction
-- Software engineering – diagnostic application with a complete pipeline
-- Machine learning – classification models for xenobiotic detection
-- Medical use cases – diagnostic support in near real time
+- Badania naukowe – analiza danych dotyczących ruchu i ekstrakcja cech behawioralnych
+- Inżynieria oprogramowania – aplikacja diagnostyczna z kompletnym pipeline'em
+- Uczenie maszynowe – modele klasyfikacyjne do wykrywania ksenobiotyków
+- Zastosowania medyczne – wsparcie diagnostyczne w czasie zbliżonym do rzeczywistego
 
-## Technology Stack
+## Stos technologiczny
 
-### Main components
+### Główne komponenty
 
 <CardGrid>
   <Card title="Backend (Django, Python)">
-    Scalable backend with REST API, data management and business logic
+    Skalowalny backend z REST API, zarządzaniem danymi i logiką biznesową
   </Card>
   <Card title="Frontend (Flutter)">
-    Multi-platform user interface for physicians and lab staff
+    Wieloplatformowy interfejs użytkownika dla lekarzy i personelu
+    laboratoryjnego
   </Card>
-  <Card title="ML model (Python)">
-    Machine learning algorithms for behavioral pattern analysis
+  <Card title="Model ML (Python)">
+    Algorytmy uczenia maszynowego do analizy wzorców behawioralnych
   </Card>
-  <Card title="Simulation (Unity)">Generation of synthetic training data</Card>
+  <Card title="Symulacja (Unity)">
+    Generowanie syntetycznych danych treningowych
+  </Card>
 </CardGrid>
 
-### Infrastructure
+### Infrastruktura
 
-- Wrocław Supercomputing Center (WCSS) – compute for ML
-- PostgreSQL – system database
-- Docker – containerization
-- xxx – hosting and cloud services
-- Roboflow – video data annotation
+- Wrocławskie Centrum Sieciowo-Superkomputerowe (WCSS) – moc obliczeniowa dla ML
+- PostgreSQL – baza danych systemu
+- Docker – konteneryzacja
+- TODO – hosting i usługi chmurowe
+- Roboflow – adnotacje danych wideo
 
-## Project status
+## Status projektu
 
-The project is currently in phase III: integration and optimization (October 2025). Work is ongoing to connect all system components and optimize ML models with real data.
+Projekt jest obecnie w fazie III: integracja i optymalizacja (październik 2025). Trwają prace nad połączeniem wszystkich komponentów systemu i optymalizacją modeli ML z użyciem rzeczywistych danych.

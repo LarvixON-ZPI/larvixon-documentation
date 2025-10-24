@@ -1,51 +1,53 @@
 ---
-title: Project team
-description: Members of the LarvixON project team and academic supervisor
+title: Zespół projektu
+description: Członkowie zespołu projektu LarvixON i promotor akademicki
 ---
 
-The LarvixON project is carried out by a team of students from the Faculty of Computer Science and Telecommunications at Wrocław University of Science and Technology as part of a team project.
+Projekt LarvixON jest realizowany przez zespół studentów Wydziału Informatyki i Telekomunikacji Politechniki Wrocławskiej w ramach projektu zespołowego.
 
 ---
 
-## Academic supervisor
+## Promotor akademicki
 
 ### Dr inż. Natalia Piórkowska
 
-Role: project supervisor
+Rola: promotor projektu
 
-Affiliation: Wrocław University of Science and Technology, Faculty of Computer Science and Telecommunications
+Politechnika Wrocławska, Wydział Informatyki i Telekomunikacji
 
-Dr inż. Natalia Piórkowska provides academic supervision for the project, supporting the team in research methodology, machine learning and ensuring compliance with academic requirements. She has expertise in data science and AI applications in biomedical contexts.
+Dr inż. Natalia Piórkowska sprawuje opiekę naukową nad projektem, wspierając zespół w metodologii badań, uczeniu maszynowym i zapewnieniu zgodności z wymogami akademickimi. Posiada wiedzę specjalistyczną w zakresie data science i zastosowań AI w kontekście biomedycznym.
 
 ---
 
-## Team members
+## Członkowie zespołu
 
-The team consists of four students of the IST program (Applied Computer Science), each bringing unique skills and specializations to the project.
+Zespół składa się z czterech studentów kierunku IST (Informatyka Stosowana), z których każdy wnosi unikalne umiejętności i specjalizacje do projektu.
 
 ### Kubś Mikołaj
 
-Role in project: Unity developer
+Rola w projekcie: programista Unity
 
-Areas of responsibility:
+Obszary odpowiedzialności:
 
-- Larvixon simulation in Unity
+- Symulacja Larvixon w Unity
+- Strona dokumentacyjna projektu
 
-Technologies:
+Technologie:
 
 - Unity
+- Astro
 
 ---
 
 ### Kulka Krzysztof
 
-Role in project: ML engineer
+Rola w projekcie: inżynier ML
 
-Areas of responsibility:
+Obszary odpowiedzialności:
 
-- Larvixon ML model
+- Model ML Larvixon
 
-Technologies:
+Technologie:
 
 - Python
 
@@ -53,13 +55,13 @@ Technologies:
 
 ### Łopianiak Martyna
 
-Role in project: backend developer
+Rola w projekcie: programista backendu
 
-Areas of responsibility:
+Obszary odpowiedzialności:
 
-- Larvixon app backend
+- Backend aplikacji Larvixon
 
-Technologies:
+Technologie:
 
 - Python
 - Django
@@ -68,68 +70,68 @@ Technologies:
 
 ### Łuszczek Patryk
 
-Role in project: frontend developer
+Rola w projekcie: programista frontendu
 
-Areas of responsibility:
+Obszary odpowiedzialności:
 
-- Larvixon app frontend
+- Frontend aplikacji Larvixon
 
-Technologies:
+Technologie:
 
 - Flutter
 
 ---
 
-## Team organization
+## Organizacja zespołu
 
-### Development methodology
+### Metodologia deweloperska
 
-The team follows an agile methodology with regular sprints and status meetings.
+Zespół stosuje metodologię zwinną z regularnymi sprintami i spotkaniami statusowymi.
 
-Practices:
+Praktyki:
 
-- Weekly team meetings
-- Two-week sprints
-- Code reviews and pair programming
-- Retrospectives and continuous improvement
+- Cotygodniowe spotkania zespołu
+- Dwutygodniowe sprinty
+- Przeglądy kodu i programowanie w parach
+- Retrospektywy i ciągłe doskonalenie
 
-### Collaboration tools
+### Narzędzia współpracy
 
-- Git / GitHub – version control, code collaboration
-  - GitHub Projects for task tracking
-  - GitHub Actions for CI/CD
-  - GitHub Pages for hosting
-- Discord – team communication
-- xxx – cloud services and hosting
+- Git / GitHub – kontrola wersji, współpraca nad kodem
+  - GitHub Projects do śledzenia zadań
+  - GitHub Actions dla CI/CD
+  - GitHub Pages do hostingu
+- Discord – komunikacja zespołowa
+- TODO – usługi chmurowe i hosting
 
-## Academic project
+## Projekt akademicki
 
-Institution: Wrocław University of Science and Technology  
-Faculty: Faculty of Computer Science and Telecommunications  
-Program: IST (Applied Computer Science)  
-Course: ZPI Team project  
-Academic year: 2025/2026  
-Semester: winter
+Instytucja: Politechnika Wrocławska  
+Wydział: Wydział Informatyki i Telekomunikacji  
+Kierunek: IST (Informatyka Stosowana)  
+Przedmiot: ZPI Projekt zespołowy  
+Rok akademicki: 2025/2026  
+Semestr: zimowy
 
-### Learning objectives
+### Cele edukacyjne
 
-The project serves not only to develop an advanced diagnostic system but also to:
+Projekt służy nie tylko rozwijaniu zaawansowanego systemu diagnostycznego, ale także:
 
-- Apply machine learning knowledge in practice
-- Develop teamwork skills in software development
-- Learn the full software development lifecycle
-- Combine computer science with medical applications
-- Manage an IT project from concept to deployment
+- Zastosowaniu wiedzy z uczenia maszynowego w praktyce
+- Rozwijaniu umiejętności pracy zespołowej w tworzeniu oprogramowania
+- Poznaniu pełnego cyklu życia oprogramowania
+- Łączeniu informatyki z zastosowaniami medycznymi
+- Zarządzaniu projektem IT od koncepcji do wdrożenia
 
 ---
 
-## Acknowledgements
+## Podziękowania
 
-The LarvixON team thanks:
+Zespół LarvixON dziękuje:
 
-- Dr inż. Natalia Piórkowska – for academic support and mentoring
-- Wrocław Supercomputing Center (WCSS) – for providing compute resources
-- Wrocław University of Science and Technology – for enabling the project
-- Uniwersytet Medyczny - for providing biological data
+- Dr inż. Natalii Piórkowskiej – za wsparcie akademickie i mentoring
+- Wrocławskiemu Centrum Sieciowo-Superkomputerowemu (WCSS) – za udostępnienie zasobów obliczeniowych
+- Politechnice Wrocławskiej – za umożliwienie realizacji projektu
+- Uniwersytetowi Medycznemu - za dostarczenie danych biologicznych
 
 ---

@@ -13,7 +13,7 @@ The LarvixON project is carried out by a team of students from the Faculty of Co
 
 Role: project supervisor
 
-Affiliation: Wrocław University of Science and Technology, Faculty of Computer Science and Telecommunications
+Wrocław University of Science and Technology, Faculty of Computer Science and Telecommunications
 
 Dr inż. Natalia Piórkowska provides academic supervision for the project, supporting the team in research methodology, machine learning and ensuring compliance with academic requirements. She has expertise in data science and AI applications in biomedical contexts.
 
@@ -30,10 +30,12 @@ Role in project: Unity developer
 Areas of responsibility:
 
 - Larvixon simulation in Unity
+- Project documentation website
 
 Technologies:
 
 - Unity
+- Astro
 
 ---
 
@@ -100,7 +102,7 @@ Practices:
   - GitHub Actions for CI/CD
   - GitHub Pages for hosting
 - Discord – team communication
-- xxx – cloud services and hosting
+- TODO – cloud services and hosting
 
 ## Academic project
 

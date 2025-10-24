@@ -1,203 +1,203 @@
 ---
-title: Project roadmap
-description: Timeline and milestones for the LarvixON project (2025)
+title: Harmonogram projektu
+description: Oś czasu i kamienie milowe projektu LarvixON (2025)
 ---
 
-Project is carried out in five main phases from June to December 2025. Each phase focuses on different aspects of the system, from foundations to full integration and optimization.
+Projekt jest realizowany w pięciu głównych fazach od czerwca do grudnia 2025. Każda faza koncentruje się na różnych aspektach systemu, od fundamentów po pełną integrację i optymalizację.
 
-![Project timeline](../../../../assets/roadmap/roadmap.png)
-
----
-
-## Timeline overview
-
-| phase     | period             | status      |
-| --------- | ------------------ | ----------- |
-| phase I   | 15.06 - 13.09.2025 | completed   |
-| phase II  | 20.09 - 30.09.2025 | completed   |
-| phase III | 05.10 - 31.10.2025 | in progress |
+![Oś czasu projektu](../../../../assets/roadmap/roadmap.png)
 
 ---
 
-## Phase I: foundations, structure and data preparation
+## Przegląd osi czasu
 
-**Period:** 15 June - 13 September 2025
+| faza     | okres              | status       |
+| -------- | ------------------ | ------------ |
+| faza I   | 15.06 - 13.09.2025 | zakończona   |
+| faza II  | 20.09 - 30.09.2025 | zakończona   |
+| faza III | 05.10 - 31.10.2025 | w realizacji |
 
-### Main goals
+---
 
-- Establish a solid project foundation
-- Prepare the development infrastructure
-- Collect and prepare training data
+## Faza I: fundamenty, struktura i przygotowanie danych
 
-### Milestones
+**Okres:** 15 czerwca - 13 września 2025
 
-#### 15.06.2025: data collection finalized
+### Główne cele
 
-Status: completed
+- Ustanowienie solidnych fundamentów projektu
+- Przygotowanie infrastruktury deweloperskiej
+- Zebranie i przygotowanie danych treningowych
 
-- Collection of video recordings of Galleria mellonella larvae
-- Initial data cleaning
-- Annotation in Roboflow
-- Preparation of first training sets
+### Kamienie milowe
 
-#### 16.08.2025: repository creation and MVP plan
+#### 15.06.2025: finalizacja zbierania danych
 
-Status: completed
+Status: zakończony
 
-- creation of all project repositories:
+- Zebranie nagrań wideo larw Galleria mellonella
+- Wstępne czyszczenie danych
+- Adnotacje w Roboflow
+- Przygotowanie pierwszych zestawów treningowych
+
+#### 16.08.2025: utworzenie repozytoriów i plan MVP
+
+Status: zakończony
+
+- utworzenie wszystkich repozytoriów projektu:
   - Backend (Django)
   - Frontend (Flutter)
-  - ML Models (Python)
-  - Simulation (Unity)
-  - Documentation
-- definition of the MVP (minimum viable product)
-- start of the first development iteration
+  - Modele ML (Python)
+  - Symulacja (Unity)
+  - Dokumentacja
+- definicja MVP (minimum viable product)
+- rozpoczęcie pierwszej iteracji deweloperskiej
 
-#### 04.09.2025: authentication system (backend)
+#### 04.09.2025: system uwierzytelniania (backend)
 
-Status: completed
+Status: zakończony
 
-Implemented:
+Zaimplementowano:
 
-- User login
-- New account registration
-- Multi-factor authentication (MFA)
-- Google login (OAuth 2.0)
-- Session management
-- Token-based authentication
+- Logowanie użytkownika
+- Rejestracja nowego konta
+- Uwierzytelnianie wieloskładnikowe (MFA)
+- Logowanie przez Google (OAuth 2.0)
+- Zarządzanie sesjami
+- Uwierzytelnianie oparte na tokenach
 
-#### 04.09.2025: simulation — review version
+#### 04.09.2025: symulacja — wersja przeglądowa
 
-Status: completed
+Status: zakończony
 
-- First working version of the Unity simulation
-- Basic larval behaviors
-- Ready for code review by the team
-- Validation of the biological model
+- Pierwsza działająca wersja symulacji Unity
+- Podstawowe zachowania larw
+- Gotowa do przeglądu kodu przez zespół
+- Walidacja modelu biologicznego
 
-#### 13.09.2025: simulation v1.0.0 — first data
+#### 13.09.2025: symulacja v1.0.0 — pierwsze dane
 
-Status: completed
+Status: zakończony
 
-Version 1.0.0 of the simulation ready for:
+Wersja 1.0.0 symulacji gotowa do:
 
-- Generation of the first test data batch
-- Validation of the generation pipeline
-- Testing correctness of synthetic data
-- Initial training of ML models
+- Generowania pierwszej partii danych testowych
+- Walidacji pipeline'u generowania
+- Testowania poprawności danych syntetycznych
+- Wstępnego trenowania modeli ML
 
 ---
 
-## Phase II: backend, frontend and initial ML model
+## Faza II: backend, frontend i wstępny model ML
 
-**Period:** 20 September - 30 September 2025
+**Okres:** 20 września - 30 września 2025
 
 <!-- markdownlint-disable MD024 -->
 
-### Main goals
+### Główne cele
 
-- Frontend development
-- Implementation of API and database models
-- Selection and training of the first ML model
-- Second generation of simulation data
+- Rozwój frontendu
+- Implementacja API i modeli bazy danych
+- Wybór i trenowanie pierwszego modelu ML
+- Druga generacja danych symulacyjnych
 
-### Milestones
+### Kamienie milowe
 
-#### 20.09.2025: login and registration screens (frontend)
+#### 20.09.2025: ekrany logowania i rejestracji (frontend)
 
-Status: completed
+Status: zakończony
 
-Implemented in Flutter:
+Zaimplementowano we Flutter:
 
-- Login screen with validation
-- Registration form
-- Google OAuth integration
-- MFA support
-- Clear UX/UI
+- Ekran logowania z walidacją
+- Formularz rejestracji
+- Integracja z Google OAuth
+- Wsparcie MFA
+- Przejrzysty UX/UI
 
-#### 25.09.2025: landing page
+#### 25.09.2025: strona docelowa
 
-Status: completed
+Status: zakończony
 
-- Application home page
-- Presentation of system features
-- Navigation to main sections
-- Responsive design
+- Strona główna aplikacji
+- Prezentacja funkcji systemu
+- Nawigacja do głównych sekcji
+- Responsywny design
 
-#### 26.09.2025: final ML model selection
+#### 26.09.2025: finalny wybór modelu ML
 
-Status: completed
+Status: zakończony
 
-Selection process:
+Proces wyboru:
 
-- Analysis of architectures (CNN, RNN, Transformer)
-- Performance comparison
-- Tests on synthetic data
-- Selection based on:
-  - Prediction accuracy
-  - Inference time
-  - Compute requirements
+- Analiza architektur (CNN, RNN, Transformer)
+- Porównanie wydajności
+- Testy na danych syntetycznych
+- Wybór na podstawie:
+  - Dokładności predykcji
+  - Czasu wnioskowania
+  - Wymagań obliczeniowych
 
-#### 30.09.2025: user panel
+#### 30.09.2025: panel użytkownika
 
-Status: completed
+Status: zakończony
 
-Features:
+Funkcje:
 
-- Dashboard with summary
-- History of analyses
-- Sample management
-- Account settings
+- Dashboard z podsumowaniem
+- Historia analiz
+- Zarządzanie próbkami
+- Ustawienia konta
 
-#### 30.09.2025: training on synthetic data
+#### 30.09.2025: trenowanie na danych syntetycznych
 
-Status: completed
+Status: zakończony
 
-- First phase of training on Unity data
-- Baseline performance metrics
-- Cross-validation
-- Results analysis
+- Pierwsza faza treningu na danych Unity
+- Podstawowe metryki wydajności
+- Walidacja krzyżowa
+- Analiza wyników
 
-#### 30.09.2025: database models and API endpoints
+#### 30.09.2025: modele bazy danych i endpointy API
 
-Status: completed
+Status: zakończony
 
 Backend (Django):
 
-- Finalization of database models
+- Finalizacja modeli bazy danych
   - User
   - Sample
   - Analysis
   - Result
   - Metadata
-- Implementation of REST API endpoints
-- Django REST Framework setup
-- Swagger documentation
+- Implementacja endpointów REST API
+- Konfiguracja Django REST Framework
+- Dokumentacja Swagger
 
-#### 30.09.2025: simulation v1.1.0 — full generation
+#### 30.09.2025: symulacja v1.1.0 — pełna generacja
 
-Status: completed
+Status: zakończony
 
-Simulation v1.1.0:
+Symulacja v1.1.0:
 
-- Extended scenarios
-- Diverse experimental conditions
-- Generation of all planned data
-- Larger training set
+- Rozszerzone scenariusze
+- Zróżnicowane warunki eksperymentalne
+- Generacja wszystkich zaplanowanych danych
+- Większy zestaw treningowy
 
-#### 30.09.2025: ML model performance validation
+#### 30.09.2025: walidacja wydajności modelu ML
 
-Status: completed
+Status: zakończony
 
-Performance metrics:
+Metryki wydajności:
 
-- Accuracy
-- Precision / Recall
+- Dokładność
+- Precyzja / Recall
 - F1-score
-- Confusion matrix
+- Macierz pomyłek
 - ROC AUC
-- Prediction time per sample
+- Czas predykcji na próbkę
 
 ---
 
-## Phase III: todo
+## Faza III: TODO
