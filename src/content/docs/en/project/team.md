@@ -133,6 +133,6 @@ The LarvixON team thanks:
 - Wrocław Supercomputing Center (WCSS) – for providing compute resources
 - Wrocław University of Science and Technology – for enabling the project
 - Uniwersytet Medyczny – for providing biological data
-- Solvro – for open sourcing their great documentation site
+- Solvro – for open sourcing their great [documentation site](https://github.com/solvro/web-solvro-docs)
 
 ---

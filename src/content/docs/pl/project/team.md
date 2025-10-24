@@ -133,6 +133,6 @@ Zespół LarvixON dziękuje:
 - Wrocławskiemu Centrum Sieciowo-Superkomputerowemu (WCSS) – za udostępnienie zasobów obliczeniowych
 - Politechnice Wrocławskiej – za umożliwienie realizacji projektu
 - Uniwersytetowi Medycznemu – za dostarczenie danych biologicznych
-- Solvro – za upublicznienie kodu swojej doskonałej strony dokumentacyjnej
+- Solvro – za upublicznienie kodu swojej doskonałej [strony dokumentacyjnej](https://github.com/solvro/web-solvro-docs)
 
 ---
