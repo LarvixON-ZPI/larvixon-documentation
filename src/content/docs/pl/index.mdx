@@ -1,0 +1,92 @@
+---
+title: LarvixON - dokumentacja projektu
+description: Szybki system diagnostyczny toksyczności plazmy wykorzystujący analizę behawioralną larw i algorytmy uczenia maszynowego
+---
+
+import {
+  Steps,
+  Card,
+  CardGrid,
+  LinkCard,
+  Aside,
+} from "@astrojs/starlight/components";
+
+## Witamy w dokumentacji LarvixON
+
+**Politechnika Wrocławska**  
+**Wydział Informatyki i Telekomunikacji**  
+Kierunek: IST  
+**Projekt zespołowy**
+
+LarvixON to innowacyjne rozwiązanie diagnostyczne, które wykorzystuje sztuczną inteligencję do wykrywania ksenobiotyków w plazmie pacjenta poprzez analizę wzorców ruchu larw Galleria mellonella.
+
+<Aside type="tip">
+  Projekt ma na celu osiągnięcie wysokiej czułości i specyficzności
+  klasyfikatora przy czasie analizy nieprzekraczającym 20 minut.
+</Aside>
+
+## Szybki start
+
+<CardGrid>
+  <LinkCard
+    title="Przegląd projektu"
+    href="project/overview/"
+    description="Zapoznaj się z celami i zakresem projektu"
+  />
+  <LinkCard
+    title="Technologie"
+    href="project/technologies/"
+    description="Stos technologiczny i narzędzia"
+  />
+  <LinkCard
+    title="Harmonogram projektu"
+    href="project/roadmap/"
+    description="Plan projektu i kamienie milowe"
+  />
+  <LinkCard
+    title="Zespół projektu"
+    href="project/team/"
+    description="Członkowie zespołu i promotor"
+  />
+</CardGrid>
+
+## O projekcie
+
+LarvixON rozwija szybki system diagnostyczny oparty na AI, który analizuje wzorce ruchu larw w celu identyfikacji charakterystycznych reakcji organizmu na substancje toksyczne. System łączy:
+
+- Badania naukowe – analiza danych dotyczących ruchu i ekstrakcja cech behawioralnych
+- Inżynieria oprogramowania – aplikacja diagnostyczna z kompletnym pipeline'em
+- Uczenie maszynowe – modele klasyfikacyjne do wykrywania ksenobiotyków
+- Zastosowania medyczne – wsparcie diagnostyczne w czasie zbliżonym do rzeczywistego
+
+## Stos technologiczny
+
+### Główne komponenty
+
+<CardGrid>
+  <Card title="Backend (Django, Python)">
+    Skalowalny backend z REST API, zarządzaniem danymi i logiką biznesową
+  </Card>
+  <Card title="Frontend (Flutter)">
+    Wieloplatformowy interfejs użytkownika dla lekarzy i personelu
+    laboratoryjnego
+  </Card>
+  <Card title="Model ML (Python)">
+    Algorytmy uczenia maszynowego do analizy wzorców behawioralnych
+  </Card>
+  <Card title="Symulacja (Unity)">
+    Generowanie syntetycznych danych treningowych
+  </Card>
+</CardGrid>
+
+### Infrastruktura
+
+- Wrocławskie Centrum Sieciowo-Superkomputerowe (WCSS) – moc obliczeniowa dla ML
+- PostgreSQL – baza danych systemu
+- Docker – konteneryzacja
+- TODO – hosting i usługi chmurowe
+- Roboflow – adnotacje danych wideo
+
+## Status projektu
+
+Projekt jest obecnie w fazie III: integracja i optymalizacja (październik 2025). Trwają prace nad połączeniem wszystkich komponentów systemu i optymalizacją modeli ML z użyciem rzeczywistych danych.

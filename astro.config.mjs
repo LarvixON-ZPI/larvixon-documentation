@@ -30,9 +30,13 @@ export default defineConfig({
       ],
       defaultLocale: "en",
       locales: {
-        root: {
+        en: {
           label: "English",
           lang: "en",
+        },
+        pl: {
+          label: "Polski",
+          lang: "pl",
         },
       },
       favicon: "favicon.ico",
@@ -59,19 +63,31 @@ export default defineConfig({
       sidebar: [
         {
           label: "Start here!",
+          translations: {
+            pl: "Zacznij tutaj!",
+          },
           items: [
             {
               label: "Project LarvixON-ZPI",
               link: "/",
+              translations: {
+                pl: "Projekt LarvixON-ZPI",
+              },
             },
             {
               label: "Communication",
               link: "/communication",
+              translations: {
+                pl: "Komunikacja",
+              },
             },
           ],
         },
         {
           label: "Project",
+          translations: {
+            pl: "Projekt",
+          },
           autogenerate: { directory: "project", collapsed: true },
         },
       ],
