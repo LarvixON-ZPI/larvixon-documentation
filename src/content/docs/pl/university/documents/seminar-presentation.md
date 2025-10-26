@@ -1,6 +1,6 @@
 ---
 title: Prezentacja na seminarium
-description: Presentacja, która opisała biznesowe i techniczne założenia projektu LarvixON
+description: Prezentacja, która opisała biznesowe i techniczne założenia projektu LarvixON
 ---
 
 [Obejrzyj prezentację jako PDF](/larvixon-documentation/seminar-presentation.pdf)
