@@ -90,6 +90,28 @@ export default defineConfig({
           },
           autogenerate: { directory: "project", collapsed: true },
         },
+        {
+          label: "University documentation",
+          translations: {
+            pl: "Dokumentacja uczelniana",
+          },
+          items: [
+            {
+              label: "Overview",
+              link: "university/overview",
+              translations: {
+                pl: "Przegląd",
+              },
+            },
+            {
+              label: "Documents",
+              autogenerate: { directory: "university/documents" },
+              translations: {
+                pl: "Dokumenty",
+              },
+            },
+          ],
+        },
       ],
     }),
     tailwind({
