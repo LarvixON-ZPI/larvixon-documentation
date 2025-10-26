@@ -1,5 +1,5 @@
 ---
-title: Flashcard
+title: Fiszka
 description: TODO
 ---
 
