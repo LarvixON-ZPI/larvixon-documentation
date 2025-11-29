@@ -3,7 +3,7 @@ title: Prezentacja na seminarium
 description: Prezentacja, która opisała biznesowe i techniczne założenia projektu LarvixON
 ---
 
-[Obejrzyj prezentację jako PDF](/larvixon-documentation/seminar-presentation.pdf)
+[Obejrzyj/pobierz dokument jako PDF](/larvixon-documentation/seminar-presentation/seminar-presentation.pdf)
 
 ![slajd 1](/larvixon-documentation/seminar-presentation/Slide1.jpg "Slajd 1")
 ![slajd 2](/larvixon-documentation/seminar-presentation/Slide2.jpg "Slajd 2")
