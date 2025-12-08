@@ -144,4 +144,4 @@
 
 \setlength{\absleftindent}{0.2cm} 
 \setlength{\absrightindent}{0.2cm}
-\RequirePackage{cite}
+%\RequirePackage{cite}
