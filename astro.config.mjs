@@ -105,7 +105,36 @@ export default defineConfig({
             },
             {
               label: "Documents",
-              autogenerate: { directory: "university/documents" },
+              items: [
+                {
+                  label: "Flashcard",
+                  link: "university/documents/flashcard",
+                  translations: {
+                    pl: "Fiszka",
+                  },
+                },
+                {
+                  label: "Seminar Presentation",
+                  link: "university/documents/seminar-presentation",
+                  translations: {
+                    pl: "Prezentacja seminarium",
+                  },
+                },
+                {
+                  label: "Poster",
+                  link: "university/documents/poster",
+                  translations: {
+                    pl: "Plakat",
+                  },
+                },
+                {
+                  label: "ZPI Report",
+                  link: "university/documents/report",
+                  translations: {
+                    pl: "Raport ZPI",
+                  },
+                },
+              ],
               translations: {
                 pl: "Dokumenty",
               },
