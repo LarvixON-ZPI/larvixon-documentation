@@ -1,0 +1,43 @@
+---
+title: Implementacja Frontend
+description: Architektura Flutter BLoC, zarządzanie stanem i integracja z symulacją Unity
+---
+
+## Interfejs Użytkownika (Flutter)
+
+Aplikacja została zbudowana w architekturze warstwowej z wykorzystaniem **Flutter 3.35.1**. Kod podzielono na moduły funkcjonalne (_feature-based_), takie jak `auth`, `analysis`, `settings`.
+
+### Zarządzanie stanem (BLoC)
+
+Zastosowano bibliotekę `flutter_bloc`. Stan aplikacji jest niemutowalny i oparty na klasach rozszerzających `Equatable` w celu optymalizacji przerysowywania widoków.
+
+- **Events:** Zdarzenia emitowane przez UI (np. kliknięcie przycisku).
+- **States:** Stany zwracane przez BLoC (np. `Loading`, `Success`, `Error`).
+
+### Obsługa błędów API
+
+Zaimplementowano wzorzec **Factory Method** dla obsługi błędów. Klasa `ApiFailure` mapuje kody HTTP (z biblioteki `dio`) na błędy domenowe, co pozwala na wyświetlanie precyzyjnych komunikatów użytkownikowi (np. walidacja formularza vs błąd serwera).
+
+### Automatyczna dokumentacja
+
+Wykorzystano narzędzie `dartdoc` do generowania statycznej dokumentacji HTML na podstawie komentarzy w kodzie (Markdown).
+
+### Testy akceptacyjne
+
+Przeprowadzono testy manualne w oparciu o scenariusze (Test Cases), weryfikując m.in.:
+
+1.  Rejestrację i walidację danych.
+2.  Upload wideo i obsługę dużych plików.
+3.  Responsywność interfejsu (Mobile vs Desktop).
+
+## Implementacja Symulacji (Unity)
+
+Symulacja (projekt `larvixon-simulation`) została zintegrowana z frontendem za pomocą wtyczki _flutter_unity_widget_.
+
+### Algorytm fizycznego ruchu larw
+
+Larwa jest modelowana jako 5 połączonych punktów. Algorytm ruchu opiera się na cyklicznych fazach zmian preferowanej odległości między segmentami ciała (głowa-odwłok), symulując naturalny ruch robaczkowy.
+
+### Modyfikatory behawioralne
+
+Wpływ ksenobiotyków na larwy jest realizowany przez klasę `MovementModifier`. Algorytm oblicza finalne parametry ruchu poprzez interpolację liniową między stanem normalnym a stanem pod wpływem narkotyku, uwzględniając czas wystąpienia (`onsetTime`) i trwania efektu (`duration`).

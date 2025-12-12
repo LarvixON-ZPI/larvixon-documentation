@@ -54,7 +54,7 @@ export default defineConfig({
         SocialIcons: "./src/overrides/SocialIcons.astro",
       },
       social: {
-        email: "mailto:272662@pwr.edu.pl",
+        email: "mailto:mikolajkubs03@gmail.com",
         github: "https://github.com/LarvixON-ZPI",
       },
       editLink: {

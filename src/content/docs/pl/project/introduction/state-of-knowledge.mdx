@@ -1,0 +1,18 @@
+---
+title: Stan wiedzy i analiza literatury
+description: Przegląd istniejących metod detekcji ksenobiotyków i wykorzystania Galleria mellonella
+---
+
+Dotychczasowe metody wykrywania ksenobiotyków opierają się głównie na analizie chemicznej, która mimo dużej dokładności wymaga długich procedur i specjalistycznego sprzętu. Coraz większe zainteresowanie budzą więc podejścia wykorzystujące modele biologiczne i algorytmy sztucznej inteligencji do pośredniego wykrywania substancji toksycznych.
+
+Larwy _Galleria mellonella_ zyskują na popularności w toksykologii dzięki niskim kosztom, szybkim reakcjom i pewnym podobieństwom ich odpowiedzi immunologicznej do reakcji ssaków. Zmiany w ich zachowaniu, zwłaszcza w aktywności ruchowej, można łatwo mierzyć przy użyciu systemów wizyjnych, co stwarza dobre warunki do automatyzacji całego procesu diagnostycznego.
+
+## Analiza literatury i badania wstępne
+
+Kluczowym etapem inicjującym prace nad projektem było przeprowadzenie szczegółowej analizy literatury i podobnych, istniejących rozwiązań w obszarze diagnostyki toksykologicznej wspomaganej sztuczną inteligencją. Proces badawczy koncentrował się na trzech głównych obszarach:
+
+1.  **Modelowanie behawioralne larw _Galleria mellonella_:** Analizowano dotychczasowe wykorzystanie larw jako modelu biologicznego (_in vivo_) do oceny toksyczności. Szczególną uwagę zwrócono na publikacje opisujące **zależność zmian motorycznych od stężenia ksenobiotyków**, co stanowiło empiryczną podstawę dla naszego podejścia diagnostycznego.
+2.  **Nowoczesne metody komputerowego przetwarzania obrazu (_Computer Vision_):** Przeprowadzono _research_ w zakresie zaawansowanych algorytmów śledzenia ruchu oraz ekstrakcji cech behawioralnych z sekwencji wideo. Analizowano efektywność tradycyjnych algorytmów śledzenia oraz nowoczesnych metod opartych na głębokim uczeniu (np. _DeepLabCut_), mając na uwadze ich wydajność i szybkość wymaganą przez system czasu rzeczywistego.
+3.  **Architektury modeli klasyfikacyjnych:** Zbadano nowoczesne podejścia do modelowania danych czasowo-przestrzennych. Analiza ta potwierdziła, że **hybrydowe architektury łączące konwolucyjne sieci neuronowe (CNN)** do ekstrakcji cech przestrzennych z **sieciami rekurencyjnymi (LSTM)** do modelowania dynamiki czasowej są optymalne dla problemu klasyfikacji sekwencji behawioralnych.
+
+Wyniki analizy wykazały, że choć literatura opisuje poszczególne elementy składowe projektu (wykorzystanie _G. mellonella_, śledzenie owadów, modelowanie sekwencyjne), **brak jest kompleksowego, wdrożonego rozwiązania komercyjnego lub badawczego**, które integrowałoby wszystkie te aspekty w jedną, skalowalną platformę do szybkiej diagnostyki klinicznej. Ta luka technologiczna stanowiła główne uzasadnienie dla podjęcia prac nad projektem LarvixON.

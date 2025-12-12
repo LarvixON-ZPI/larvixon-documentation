@@ -1,0 +1,38 @@
+---
+title: Preliminary Assumptions
+description: Target group, hardware requirements, legal aspects (GDPR), and technological limitations
+---
+
+The LarvixON system project relies on a set of key assumptions resulting from business needs, the specific nature of the medical environment, and technological limitations related to image processing and machine learning. The detailed characteristics of the adopted assumptions are presented below.
+
+## Target Audience and Operational Environment
+
+The primary users of the system are diagnostic laboratory staff and hospital medical personnel (toxicologists, ER doctors). Therefore, the following assumptions regarding the work environment have been adopted:
+
+- **Multi-platform Availability:** The system must be accessible both on stationary workstations in laboratories (web browser) and on mobile devices (tablets/smartphones), enabling quick viewing of results at the patient's bedside.
+- **Intuitive Operation:** The user interface (UI) must be maximally simplified and readable so as not to cognitively burden staff working under time pressure.
+- **Work Model:** The system operates in a client-server architecture, where heavy calculations (ML model inference) are delegated to the cloud to avoid burdening the user's end devices.
+
+## Technological and Hardware Assumptions
+
+Due to the computational complexity of video analysis algorithms and scalability requirements, the following technological assumptions have been adopted:
+
+1.  **Unified Codebase (Frontend):** To optimize the development and maintenance process, the client application will be implemented using _Flutter_ technology, allowing the compilation of native applications for Android/iOS systems and a Web version from a single source code.
+2.  **GPU Acceleration (ML Service):** The server responsible for video analysis must be equipped with graphics cards (GPU) supporting the CUDA library, which is necessary for the efficient operation of the hybrid CNN+LSTM model within a reasonable time.
+3.  **Containerization:** The entire server solution (API, databases, ML worker) will be embedded in _Docker_ containers, ensuring reproducibility of the runtime environment and ease of deployment (CI/CD).
+
+## Input Data Assumptions (Video)
+
+The effectiveness of the diagnostic model is strictly correlated with the quality of the provided video material. The following assumptions were adopted for the image analysis module:
+
+- **Recording Standardization:** The video material must show the Petri dish filmed from above ("bird's eye view"), maintaining appropriate lighting to eliminate strong shadows that could be misinterpreted by the shape detection algorithm.
+- **Data Format:** The system will support the `.mp4` video format, with a video size limit of 3 GB (a practical limitation resulting from cloud budget constraints).
+- **Biological Model:** The system assumes that _Galleria mellonella_ larvae at the appropriate developmental stage are present in the recording, and their motor reactions are the result of exposure to the tested substance.
+
+## Legal Assumptions and Data Security
+
+Since the system processes data that can be used to identify a patient (in connection with test results), the project incorporates rigorous security requirements:
+
+- **GDPR Compliance:** The system must implement _Privacy by Design_ principles. Patient personal data is stored in a separate microservice (Patient Service).
+- **Encryption:** All network communication takes place via an encrypted channel (HTTPS / TLS), and sensitive data in the database (e.g., passwords) are hashed using a strong PBKDF2 algorithm.
+- **Interoperability:** The patient data structure should be compatible with or mappable to medical standards such as HL7 FHIR, enabling potential integration with hospital systems in the future.

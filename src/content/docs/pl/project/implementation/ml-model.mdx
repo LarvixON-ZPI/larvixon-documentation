@@ -1,0 +1,29 @@
+---
+title: Model uczenia maszynowego
+description: Implementacja architektury hybrydowej CNN+LSTM w PyTorch i preprocessing wideo
+---
+
+## Implementacja modelu Larvixon ML
+
+Model został zaimplementowany w frameworku **PyTorch**, a jego celem jest wydajne przetwarzanie czasowo-przestrzenne danych wideo.
+
+### Architektura Hybrydowa (CNN + LSTM)
+
+Zastosowano architekturę zoptymalizowaną do klasyfikacji sekwencji wideo:
+
+1.  **Ekstrakcja Cech (CNN):** Wykorzystano model **ResNet18** (bez ostatnich warstw klasyfikacyjnych) jako ekstraktor cech. Każda klatka wideo jest redukowana do wektora cech (_embedding_).
+2.  **Modelowanie Czasowe (LSTM):** Sekwencja wektorów z CNN trafia do sieci **LSTM**, która uczy się dynamiki ruchu w czasie.
+3.  **Klasyfikacja:** Finalny wektor stanu LSTM przechodzi przez warstwy gęste (Fully Connected) z funkcją aktywacji _softmax_.
+
+### Preprocessing danych
+
+Proces przygotowania danych obejmuje:
+
+- **Segmentację ROI:** Automatyczne wykrywanie szalek Petriego na wideo.
+- **Próbkowanie:** Wybór reprezentatywnych klatek w równych odstępach czasu.
+- **Transformacje:** Skalowanie do 112x112 pikseli, konwersja do tensorów i normalizacja (ImageNet stats).
+
+### Trening i Wnioskowanie
+
+- **Trening:** Realizowany w pętli iteracyjnej z wykorzystaniem funkcji straty _Cross-Entropy Loss_ i optymalizatora _Adam_.
+- **Serwis predykcyjny:** Model jest serwowany poprzez API oparte na **FastAPI**. Endpoint `/predict` przyjmuje plik wideo, wykonuje preprocessing i zwraca prawdopodobieństwo wykrycia substancji.

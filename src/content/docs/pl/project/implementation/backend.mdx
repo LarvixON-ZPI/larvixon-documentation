@@ -1,0 +1,66 @@
+---
+title: Implementacja Backend
+description: Struktura aplikacji Django, zadania asynchroniczne Celery i integracja z chmurą Azure
+---
+
+Implementacja warstwy serwerowej została zrealizowana w języku Python z wykorzystaniem frameworka Django. Kod źródłowy zorganizowano w strukturę modułową (Django Apps).
+
+## Struktura projektu
+
+Projekt backendu podzielono na niezależne moduły zgodnie z zasadą _Separation of Concerns_:
+
+```text
+larvixon-backend/
+|-- accounts/           # Obsługa użytkowników (rejestracja, logowanie)
+|-- analysis/           # Zarządzanie wynikami analiz
+|-- videoprocessor/     # Logika przetwarzania wideo (Celery Tasks)
+|-- reports/            # Generowanie dokumentów PDF
+|-- patients/           # Integracja z serwisem pacjentów
+|-- larvixon_site/      # Główna konfiguracja projektu
+|-- Dockerfile          # Definicja obrazu kontenera
+```
+
+````
+
+## Konfiguracja środowiska (Docker)
+
+Wykorzystano platformę **Docker** do zapewnienia spójności środowiska. Orkiestracja usług (Django, PostgreSQL, Redis, Celery Worker) odbywa się za pomocą **Docker Compose**.
+
+## Asynchroniczne przetwarzanie (Celery)
+
+Kluczowym wyzwaniem było zapewnienie płynności UI podczas analizy wideo. Zastosowano wzorzec _Task Queue_:
+
+1. **Upload:** Serwis `VideoUploadService` zapisuje plik i tworzy rekord w bazie.
+2. **Kolejkowanie:** Uruchamiane jest zadanie asynchroniczne `process_video_task`.
+3. **Przetwarzanie:** Worker Celery pobiera zadanie i deleguje analizę do modelu ML.
+
+```python
+# Fragment implementacji zadania w videoprocessor/tasks.py
+@shared_task
+def process_video_task(analysis_id):
+    try:
+        # Logika komunikacji z modelem ML
+        pass
+    except Exception as e:
+        # Obsługa błędów
+        pass
+```
+
+## Generowanie raportów
+
+Moduł `reports` wykorzystuje bibliotekę **ReportLab** do programistycznego generowania plików PDF. Dokument nie jest zapisywany na dysku, lecz zwracany jako strumień bajtów (_FileResponse_), co optymalizuje zużycie zasobów.
+
+## Dokumentacja API
+
+Wdrożono bibliotekę `drf-spectacular`, która automatycznie generuje schemat API zgodny ze standardem **OpenAPI 3.0**. Dzięki temu dostępny jest interfejs Swagger UI do testowania endpointów.
+
+## Testy
+
+Projekt implementuje warstwową strategię testowania z wykorzystaniem `pytest` oraz `unittest.mock`:
+
+- **Testy integracyjne API:** Weryfikacja endpointów HTTP.
+- **Testy warstwy biznesowej:** Testowanie serwisów w izolacji.
+- **Testy asynchroniczne:** Mockowanie zadań Celery i zewnętrznych usług ML.
+
+Pokrycie kodu testami (_code coverage_) dla głównej logiki biznesowej wynosi ok. **78%**.
+````
