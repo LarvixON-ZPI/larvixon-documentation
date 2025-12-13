@@ -88,7 +88,65 @@ export default defineConfig({
           translations: {
             pl: "Projekt",
           },
-          autogenerate: { directory: "project", collapsed: true },
+          items: [
+            {
+              label: "Overview",
+              link: "01-project/",
+              translations: {
+                pl: "Przegląd",
+              },
+            },
+            {
+              label: "Introduction",
+              translations: {
+                pl: "Wprowadzenie",
+              },
+              autogenerate: {
+                directory: "01-project/01-introduction",
+                collapsed: true,
+              },
+            },
+            {
+              label: "Requirements",
+              translations: {
+                pl: "Wymagania",
+              },
+              autogenerate: {
+                directory: "01-project/02-requirements",
+                collapsed: true,
+              },
+            },
+            {
+              label: "Architecture",
+              translations: {
+                pl: "Architektura",
+              },
+              autogenerate: {
+                directory: "01-project/03-architecture",
+                collapsed: true,
+              },
+            },
+            {
+              label: "Implementation",
+              translations: {
+                pl: "Implementacja",
+              },
+              autogenerate: {
+                directory: "01-project/04-implementation",
+                collapsed: true,
+              },
+            },
+            {
+              label: "Results",
+              translations: {
+                pl: "Wyniki",
+              },
+              autogenerate: {
+                directory: "01-project/05-results",
+                collapsed: true,
+              },
+            },
+          ],
         },
         {
           label: "University documentation",
@@ -98,7 +156,7 @@ export default defineConfig({
           items: [
             {
               label: "Overview",
-              link: "university/overview",
+              link: "02-university/overview",
               translations: {
                 pl: "Przegląd",
               },
@@ -108,35 +166,35 @@ export default defineConfig({
               items: [
                 {
                   label: "Flashcard",
-                  link: "university/documents/flashcard",
+                  link: "02-university/documents/flashcard",
                   translations: {
                     pl: "Fiszka",
                   },
                 },
                 {
                   label: "Seminar presentation - idea",
-                  link: "university/documents/seminar-presentation",
+                  link: "02-university/documents/seminar-presentation",
                   translations: {
                     pl: "Prezentacja seminarium - pomysł",
                   },
                 },
                 {
                   label: "Seminar presentation - implementation",
-                  link: "university/documents/seminar-presentation-implementation",
+                  link: "02-university/documents/seminar-presentation-implementation",
                   translations: {
                     pl: "Prezentacja seminarium - implementacja",
                   },
                 },
                 {
                   label: "Poster",
-                  link: "university/documents/poster",
+                  link: "02-university/documents/poster",
                   translations: {
                     pl: "Plakat",
                   },
                 },
                 {
                   label: "ZPI Report",
-                  link: "university/documents/report",
+                  link: "02-university/documents/report",
                   translations: {
                     pl: "Raport ZPI",
                   },
