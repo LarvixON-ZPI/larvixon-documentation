@@ -1,5 +1,5 @@
 ---
-title: Prezentacja na seminarium
+title: Pierwsza prezentacja na seminarium - pomysł
 description: Prezentacja, która opisała biznesowe i techniczne założenia projektu LarvixON
 ---
 

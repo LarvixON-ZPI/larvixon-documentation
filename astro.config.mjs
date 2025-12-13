@@ -114,10 +114,17 @@ export default defineConfig({
                   },
                 },
                 {
-                  label: "Seminar Presentation",
+                  label: "Seminar presentation - idea",
                   link: "university/documents/seminar-presentation",
                   translations: {
-                    pl: "Prezentacja seminarium",
+                    pl: "Prezentacja seminarium - pomysł",
+                  },
+                },
+                {
+                  label: "Seminar presentation - implementation",
+                  link: "university/documents/seminar-presentation-implementation",
+                  translations: {
+                    pl: "Prezentacja seminarium - implementacja",
                   },
                 },
                 {
