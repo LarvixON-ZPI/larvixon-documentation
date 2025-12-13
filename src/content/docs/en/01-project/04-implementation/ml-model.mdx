@@ -1,0 +1,29 @@
+---
+title: Machine Learning Model
+description: Implementation of the hybrid CNN+LSTM architecture in PyTorch and video preprocessing
+---
+
+## Larvixon ML Model Implementation
+
+The model was implemented using the **PyTorch** framework, aiming for efficient spatiotemporal processing of video data.
+
+### Hybrid Architecture (CNN + LSTM)
+
+An architecture optimized for video sequence classification was applied:
+
+1.  **Feature Extraction (CNN):** The **ResNet18** model (without final classification layers) was used as a feature extractor. Each video frame is reduced to a feature vector (_embedding_).
+2.  **Temporal Modeling (LSTM):** The sequence of vectors from the CNN is fed into an **LSTM** network, which learns movement dynamics over time.
+3.  **Classification:** The final LSTM state vector passes through Fully Connected layers with a _softmax_ activation function.
+
+### Data Preprocessing
+
+The data preparation process includes:
+
+- **ROI Segmentation:** Automatic detection of Petri dishes in the video.
+- **Sampling:** Selection of representative frames at equal time intervals.
+- **Transformations:** Scaling to 112x112 pixels, conversion to tensors, and normalization (ImageNet stats).
+
+### Training and Inference
+
+- **Training:** Executed in an iterative loop using the _Cross-Entropy Loss_ function and the _Adam_ optimizer.
+- **Prediction Service:** The model is served via an API based on **FastAPI**. The `/predict` endpoint accepts a video file, performs preprocessing, and returns the probability of substance detection.

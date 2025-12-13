@@ -1,6 +1,6 @@
 ---
 title: LarvixON - dokumentacja projektu
-description: Szybki system diagnostyczny toksyczności plazmy wykorzystujący analizę behawioralną larw i algorytmy uczenia maszynowego
+description: diagnostyka toksyczności osocza z wykorzystaniem analizy behawioralnej larw
 ---
 
 import {
@@ -29,24 +29,34 @@ LarvixON to innowacyjne rozwiązanie diagnostyczne, które wykorzystuje sztuczn�
 
 <CardGrid>
   <LinkCard
-    title="Przegląd projektu"
-    href="project/overview/"
-    description="Zapoznaj się z celami i zakresem projektu"
+    title="1. Wprowadzenie"
+    href="01-project/01-introduction/goals-and-scope/"
+    description="Cele projektu, zakres i stan wiedzy"
   />
   <LinkCard
-    title="Technologie"
-    href="project/technologies/"
-    description="Stos technologiczny i narzędzia"
+    title="2. Wymagania"
+    href="01-project/02-requirements/assumptions/"
+    description="Założenia wstępne i specyfikacja"
   />
   <LinkCard
-    title="Harmonogram projektu"
-    href="project/roadmap/"
-    description="Plan projektu i kamienie milowe"
+    title="3. Architektura"
+    href="01-project/03-architecture/system-design/"
+    description="Projekt systemu i schemat bazy danych"
   />
   <LinkCard
-    title="Zespół projektu"
-    href="project/team/"
-    description="Członkowie zespołu i promotor"
+    title="4. Implementacja"
+    href="01-project/04-implementation/backend/"
+    description="Szczegóły techniczne implementacji"
+  />
+  <LinkCard
+    title="5. Wyniki"
+    href="01-project/05-results/demonstration/"
+    description="Rezultaty projektu i demonstracje"
+  />
+  <LinkCard
+    title="Dokumenty uczelniane"
+    href="02-university/overview/"
+    description="Dokumentacja akademicka i prezentacje"
   />
 </CardGrid>
 
@@ -90,3 +100,20 @@ LarvixON rozwija szybki system diagnostyczny oparty na AI, który analizuje wzor
 ## Status projektu
 
 Projekt jest obecnie w fazie III: integracja i optymalizacja. Trwają prace nad połączeniem wszystkich komponentów systemu i optymalizacją modeli ML z użyciem rzeczywistych danych.
+
+## Zasoby GitHub
+
+Poniżej znajdują się linki do wszystkich elementów systemu LarvixON hostowanych na platformie GitHub.
+
+### Repozytoria kodu
+
+- [larvixon-backend](https://github.com/LarvixON-ZPI/larvixon-backend) - Logika serwera (Django)
+- [larvixon-frontend](https://github.com/LarvixON-ZPI/larvixon-frontend) - Aplikacja kliencka (Flutter)
+- [larvixon-model](https://github.com/LarvixON-ZPI/larvixon-model) - Model uczenia maszynowego (PyTorch)
+- [larvixon-patients-service](https://github.com/LarvixON-ZPI/larvixon-patients-service) - Mikroserwis danych pacjentów
+- [larvixon-simulation](https://github.com/LarvixON-ZPI/larvixon-simulation) - Symulacja Unity do generowania danych
+- [larvixon-documentation](https://github.com/LarvixON-ZPI/larvixon-documentation) - Kod źródłowy tej dokumentacji
+
+### Zarządzanie projektem
+
+- [Tablica GitHub Projects](https://github.com/orgs/LarvixON-ZPI/projects/1/views/1?filterQuery=) - Tablica Kanban z zadaniami i postępami

@@ -1,0 +1,31 @@
+---
+title: Schemat bazy danych
+description: Model konceptualny ERD, relacje encji oraz fizyczna implementacja w PostgreSQL.
+sidebar:
+  order: 3
+---
+
+## Model konceptualny
+
+Centralnym punktem systemu jest powiązanie użytkownika z analizami i wynikami detekcji.
+
+- **Użytkownik - Profil** (1:1)
+- **Użytkownik - Analiza** (1:N)
+- **Analiza - Wynik** (1:N)
+
+![Diagram ERD](../../../../../assets/images-backend/larvixon_concept.png)
+
+## Implementacja fizyczna
+
+Baza danych została zrealizowana w podejściu _Code-First_ przy użyciu Django ORM.
+
+### Tabela Analiz
+
+Główna tabela `videoanalysis` przechowuje metadane procesu przetwarzania oraz statusy.
+![Struktura tabeli analizy](../../../../../assets/images-backend/analysis_table.png)
+
+### Wyniki
+
+Tabela `analysisresult` łączy analizę z substancją, przechowując pewność modelu. Zastosowano klucz unikalny `UNIQUE TOGETHER` dla par `(analysis_id, substance_id)`.
+
+![Fizyczny model bazy danych](../../../../../assets/images-backend/physical_db.png)

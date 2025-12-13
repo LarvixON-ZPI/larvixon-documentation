@@ -1,0 +1,18 @@
+---
+title: State of Knowledge and Literature Review
+description: Overview of existing xenobiotic detection methods and the use of Galleria mellonella
+---
+
+Current methods for detecting xenobiotics rely mainly on chemical analysis, which, despite high accuracy, requires long procedures and specialized equipment. Consequently, there is growing interest in approaches using biological models and artificial intelligence algorithms for indirect detection of toxic substances.
+
+_Galleria mellonella_ larvae are gaining popularity in toxicology due to low costs, rapid reactions, and certain similarities in their immune response to that of mammals. Changes in their behavior, especially locomotor activity, can be easily measured using vision systems, creating favorable conditions for automating the entire diagnostic process.
+
+## Literature Analysis and Preliminary Research
+
+A key stage initiating work on the project was conducting a detailed analysis of literature and similar existing solutions in the area of toxicology diagnostics supported by artificial intelligence. The research process focused on three main areas:
+
+1.  **Behavioral modeling of _Galleria mellonella_ larvae:** The current use of larvae as a biological model (_in vivo_) for toxicity assessment was analyzed. Particular attention was paid to publications describing the **dependence of motor changes on xenobiotic concentration**, which provided the empirical basis for our diagnostic approach.
+2.  **Modern Computer Vision methods:** Research was conducted on advanced motion tracking algorithms and the extraction of behavioral features from video sequences. The effectiveness of traditional tracking algorithms and modern deep learning-based methods (e.g., _DeepLabCut_) was analyzed, considering the efficiency and speed required by a real-time system.
+3.  **Classification model architectures:** Modern approaches to modeling spatiotemporal data were examined. This analysis confirmed that **hybrid architectures combining Convolutional Neural Networks (CNN)** for spatial feature extraction with **Recurrent Neural Networks (LSTM)** for modeling temporal dynamics are optimal for the problem of classifying behavioral sequences.
+
+The analysis results showed that although the literature describes individual components of the project (use of _G. mellonella_, insect tracking, sequential modeling), **there is no comprehensive, implemented commercial or research solution** that integrates all these aspects into a single, scalable platform for rapid clinical diagnostics. This technological gap provided the main justification for undertaking work on the LarvixON project.

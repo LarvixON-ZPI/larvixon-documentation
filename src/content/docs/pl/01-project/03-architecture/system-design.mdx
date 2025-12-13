@@ -1,0 +1,44 @@
+---
+title: Przegląd systemu i infrastruktura
+description: Ogólna architektura systemu LarvixON, model C4, diagram kontenerów oraz stos technologiczny oparty na Azure.
+sidebar:
+  order: 1
+---
+
+## Repozytoria kodu
+
+System został podzielony na niezależne komponenty hostowane w organizacji GitHub [LarvixON-ZPI](https://github.com/LarvixON-ZPI). Główne repozytoria to:
+
+- Backend (Django)
+- Frontend (Flutter)
+- Model ML (PyTorch)
+- Serwis Pacjentów (FastAPI)
+- Symulacja (Unity)
+
+## Architektura ogólna
+
+Architektura backendu została zaprojektowana zgodnie z wzorcem modułowego monolitu, oddzielając logikę biznesową od procesów obliczeniowych.
+
+### Diagram kontekstu (C1)
+
+![Diagram kontekstu systemowego](../../../../../assets/images-backend/larvixon-SystemContext.png)
+
+### Diagram kontenerów (C2)
+
+System składa się z następujących elementów infrastruktury:
+
+1.  **Django App:** API i logika biznesowa.
+2.  **Celery Worker:** Asynchroniczne przetwarzanie wideo.
+3.  **Redis:** Broker wiadomości i cache.
+4.  **PostgreSQL:** Relacyjna baza danych.
+5.  **Nginx:** Reverse proxy.
+
+![Diagram kontenerów](../../../../../assets/images-backend/larvixon-Containers.png)
+
+## Infrastruktura chmurowa (Azure)
+
+System wykorzystuje usługi zarządzane (Managed Services) w celu zapewnienia skalowalności:
+
+- **Azure Database for PostgreSQL**: Przechowywanie metadanych.
+- **Azure Cache for Redis**: Obsługa kolejki zadań.
+- **Azure Blob Storage**: Magazyn plików wideo (integracja przez `django-storages`).

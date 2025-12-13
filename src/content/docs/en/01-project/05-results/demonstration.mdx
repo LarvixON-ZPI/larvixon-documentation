@@ -1,0 +1,52 @@
+---
+title: System Demonstration
+description: Example usage scenario (workflow) from login to report generation.
+sidebar:
+  order: 1
+---
+
+Below is a complete scenario of a diagnostic task performed by a logged-in user. The process includes authorization, commissioning a video analysis, monitoring its status, and interpreting the results.
+
+## Step 1: Authorization
+
+The process begins on the welcome screen. If the user has used the application before, the system automatically verifies the validity of the locally stored access token. For new sessions, login is required.
+
+![Welcome screen and login](../../../../../assets/images-frontend/app-ui/landing.png)
+
+## Step 2: New Analysis Commissioning
+
+The user initiates the research process by launching a multi-step wizard.
+
+1.  **Video Upload**: Uploading the file with larvae recording.
+2.  **Clinical Description**: Optional notes.
+3.  **Patient Selection**: Searching for a patient by PESEL number.
+
+![New analysis wizard screen](../../../../../assets/new_analysis.png)
+
+## Step 3: Progress Monitoring
+
+After submitting the form, the new order appears on the analysis list (Grid). The user sees the processing status (e.g., _Pending_, _Processing_, _Completed_).
+
+![Analysis grid with new task](../../../../../assets/grid_waiting_for_result.png)
+
+## Step 4: Results and Reporting
+
+Once the ML model completes the analysis, the user gains access to the details.
+
+### Metadata and Preview
+
+The view contains a video thumbnail, patient data, and examination status.
+
+![Thumbnail and patient data](../../../../../assets/redbull_miniature.png)
+
+### Detection Results
+
+The key element is the panel showing detected toxic substances along with the percentage confidence indicator of the model's prediction.
+
+![ML model calculation result](../../../../../assets/results_redbull.png)
+
+### Report Export
+
+The user can generate a formal PDF document, ready to be attached to medical records.
+
+![Exported PDF report](../../../../../assets/dr_mikolaj.png)

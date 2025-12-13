@@ -1,0 +1,70 @@
+---
+title: Specyfikacja wymagań
+description: Wymagania funkcjonalne (User Stories), niefunkcjonalne oraz kryteria akceptacji
+---
+
+## Wymagania funkcjonalne
+
+Poniżej przedstawiono listę wymagań funkcjonalnych pogrupowanych w Epiki, zdefiniowanych w formie User Stories.
+
+### Epic 1: Zarządzanie użytkownikiem
+
+1.  **US-1.1** Jako nowy użytkownik chcę móc zarejestrować się w systemie, aby uzyskać dostęp do platformy.
+2.  **US-1.2** Jako zarejestrowany użytkownik chcę móc zalogować się do systemu, aby uzyskać dostęp do moich analiz.
+3.  **US-1.3** Jako zalogowany użytkownik chcę móc edytować swoje dane, aby aktualizować informacje o sobie.
+
+### Epic 2: Zarządzanie analizami
+
+1.  **US-2.1** Jako zalogowany użytkownik chcę móc przesłać nagranie wideo larw, aby system mógł je przeanalizować.
+2.  **US-2.2** Jako zalogowany użytkownik chcę widzieć listę wszystkich moich analiz, aby śledzić postęp i przeglądać wyniki.
+3.  **US-2.3** Jako zalogowany użytkownik chcę zobaczyć szczegóły konkretnej analizy, aby przeanalizować wyniki i podjąć decyzje medyczne.
+4.  **US-2.4** Jako zalogowany użytkownik chcę móc usunąć analizę, aby pozbyć się niepotrzebnych danych.
+5.  **US-2.5** Jako zalogowany użytkownik chcę zlecić wykonanie analizy ponownie, jeśli mam wątpliwości lub analiza się nie powiodła.
+6.  **US-2.6** Jako zalogowany użytkownik chcę móc wyeksportować wyniki analizy w formacie dokumentu PDF, aby móc wydrukować wyniki i podzielić się z nimi z członkami personelu.
+
+### Epic 3: Informacja o systemie
+
+1.  **US-3.1** Jako użytkownik chcę wysłać wiadomość do zespołu, aby zadać pytanie dotyczące systemu.
+
+![Diagram kontekstu systemowego (warstwa C1 modelu architektury C4)](../../../../../assets/images-backend/larvixon-SystemContext.png)
+_Diagram kontekstu systemowego (warstwa C1 modelu architektury C4)_
+
+## Wymagania niefunkcjonalne
+
+### Wydajność i skalowalność
+
+1.  **NFR-1.1** System powinien umożliwiać asynchroniczne przetwarzanie plików wideo, aby proces analizy ML nie blokował interfejsu użytkownika ani głównego wątku serwera.
+2.  **NFR-1.2** Czas odpowiedzi API dla standardowych operacji (pobranie listy, logowanie) nie powinien przekraczać 500 ms w warunkach stabilnego łącza internetowego.
+3.  **NFR-1.3** System powinien obsługiwać pliki wideo o wielkości do 3 GB.
+4.  **NFR-1.4** Symulacja behawioralna powinna działać z płynnością minimum 30 klatek na sekundę (FPS) na referencyjnym sprzęcie biurowym.
+
+### Bezpieczeństwo i ochrona danych
+
+1.  **NFR-2.1** Komunikacja między klientem a serwerem musi być szyfrowana przy użyciu protokołu HTTPS.
+2.  **NFR-2.2** Hasła użytkowników muszą być przechowywane w bazie danych w formie zaszyfrowanej.
+3.  **NFR-2.3** Dostęp do danych pacjentów oraz wyników analiz musi być chroniony mechanizmem uwierzytelniania opartym na tokenach JWT.
+4.  **NFR-2.4** System musi wymuszać politykę haseł (minimum 8 znaków).
+
+### Użyteczność i kompatybilność
+
+1.  **NFR-3.1** Aplikacja kliencka musi być możliwa do skompilowania i uruchomienia jako natywna aplikacja na systemach: Android, Windows oraz Linux, a także jako aplikacja przeglądarkowa.
+2.  **NFR-3.2** Interfejs użytkownika musi być responsywny i adaptować się do metody wprowadzania danych (dotyk vs mysz/klawiatura).
+3.  **NFR-3.3** Aplikacja musi wspierać internacjonalizację i umożliwiać dynamiczną zmianę języka interfejsu (polski/angielski).
+4.  **NFR-3.4** System powinien informować użytkownika o statusie długotrwałych operacji za pomocą wskaźników postępu lub ekranów szkieletowych.
+
+### Niezawodność i obsługa błędów
+
+1.  **NFR-4.1** W przypadku niedostępności serwera lub braku połączenia, aplikacja powinna wyświetlić czytelny komunikat błędu.
+2.  **NFR-4.2** System powinien walidować przesyłane pliki wideo pod kątem formatu przed rozpoczęciem procesu przetwarzania.
+
+## Realizacja wymagań i zarządzanie projektem
+
+W celu efektywnej organizacji pracy zespołu oraz monitorowania postępów w implementacji zdefiniowanych wymagań funkcjonalnych, wykorzystano platformę **GitHub Projects**. Przyjęto metodykę zwinnego zarządzania projektem (Agile) z wykorzystaniem tablicy Kanban.
+
+Proces zarządzania wymaganiami przebiegał następująco:
+
+1.  **Definicja zadań:** Każde zdefiniowane wcześniej _User Story_ zostało przełożone na konkretne zgłoszenia (_Issues_).
+2.  **Szacowanie i priorytetyzacja:** Zadania trafiały do _Backlogu_, gdzie nadawano im priorytety.
+3.  **Cykl życia zadania:** Zadania przechodziły przez statusy: _Ready_, _In Progress_, _In Review_ oraz _Done_.
+
+Takie podejście pozwoliło na zachowanie _traceability_, a ścisła współpraca z Uniwersytetem Medycznym we Wrocławiu umożliwiła weryfikację założeń projektowych.

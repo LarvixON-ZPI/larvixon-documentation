@@ -1,0 +1,67 @@
+---
+title: Backend Implementation
+description: Django application structure, Celery asynchronous tasks, and Azure cloud integration
+---
+
+The server layer implementation was realized in Python using the Django framework. The source code follows a modular structure (Django Apps).
+
+## Project Structure
+
+The backend project is divided into independent modules according to the _Separation of Concerns_ principle:
+
+```text
+larvixon-backend/
+|-- accounts/           # User management (registration, login)
+|-- analysis/           # Analysis result management
+|-- videoprocessor/     # Video processing logic (Celery Tasks)
+|-- reports/            # PDF document generation
+|-- patients/           # Patient service integration
+|-- larvixon_site/      # Main project configuration
+|-- Dockerfile          # Container image definition
+```
+
+````
+
+## Environment Configuration (Docker)
+
+**Docker** was used to ensure environment consistency. Service orchestration (Django, PostgreSQL, Redis, Celery Worker) is handled via **Docker Compose**.
+
+## Asynchronous Processing (Celery)
+
+A key challenge was ensuring UI responsiveness during video analysis. A _Task Queue_ pattern was applied:
+
+1. **Upload:** The `VideoUploadService` saves the file and creates a database record.
+2. **Queuing:** The asynchronous task `process_video_task` is triggered.
+3. **Processing:** The Celery Worker picks up the task and delegates analysis to the ML model.
+
+```python
+# Snippet of task implementation in videoprocessor/tasks.py
+@shared_task
+def process_video_task(analysis_id):
+    try:
+        # Logic for communication with the ML model
+        pass
+    except Exception as e:
+        # Error handling
+        pass
+```
+
+## Report Generation
+
+The `reports` module uses the **ReportLab** library for programmatic PDF generation. The document is not saved to disk but returned as a byte stream (_FileResponse_), optimizing resource usage.
+
+## API Documentation
+
+The `drf-spectacular` library was implemented to automatically generate an API schema compliant with the **OpenAPI 3.0** standard. This provides a Swagger UI interface for testing endpoints.
+
+## Testing
+
+The project implements a layered testing strategy using `pytest` and `unittest.mock`:
+
+- **API Integration Tests:** Verification of HTTP endpoints.
+- **Business Layer Tests:** Testing services in isolation.
+- **Asynchronous Tests:** Mocking Celery tasks and external ML services.
+
+Code coverage for the main business logic is approximately **78%**.
+
+````

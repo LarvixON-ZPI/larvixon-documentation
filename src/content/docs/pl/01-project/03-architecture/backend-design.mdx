@@ -1,0 +1,37 @@
+---
+title: Projekt Backend i API
+description: Struktura modułowa aplikacji Django, warstwy logiczne, specyfikacja REST API oraz diagram komponentów C3.
+sidebar:
+  order: 2
+---
+
+## Struktura modułowa (C3)
+
+Kod aplikacji został podzielony na domeny funkcjonalne zgodnie z zasadą _Separation of Concerns_.
+
+![Diagram komponentów backendu](../../../../../assets/images-backend/larvixon-BackendComponents.png)
+
+Wyróżnione moduły:
+
+- **accounts**: Zarządzanie tożsamością i JWT.
+- **analysis**: Cykl życia analizy i wyniki.
+- **patients**: Integracja z serwisem pacjentów.
+- **videoprocessor**: Obsługa uploadu i delegacja zadań ML.
+
+## Projekt API
+
+Komunikacja odbywa się w oparciu o architekturę REST. API jest w pełni udokumentowane w standardzie OpenAPI (Swagger).
+
+| Metoda | Endpoint              | Opis             |
+| :----- | :-------------------- | :--------------- |
+| GET    | `/api/patients/`      | Lista pacjentów  |
+| POST   | `/api/video/upload/`  | Przesłanie wideo |
+| GET    | `/api/analysis/{id}/` | Wyniki analizy   |
+
+## Architektura warstwowa
+
+Zastosowano podział na warstwy logiczne:
+
+1.  **Warstwa prezentacji**: Widoki i serializery (Django REST Framework).
+2.  **Warstwa logiki biznesowej**: Serwisy (Wzorzec Strategii, np. `BasePatientService`).
+3.  **Warstwa danych**: Modele Django ORM.

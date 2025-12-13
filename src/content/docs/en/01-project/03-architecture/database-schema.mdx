@@ -1,0 +1,31 @@
+---
+title: Database Schema
+description: Conceptual ERD model, entity relationships, and physical implementation in PostgreSQL.
+sidebar:
+  order: 3
+---
+
+## Conceptual Model
+
+The core of the system connects the user with analyses and detection results.
+
+- **User - Profile** (1:1)
+- **User - Analysis** (1:N)
+- **Analysis - Result** (1:N)
+
+![ERD Diagram](../../../../../assets/images-backend/larvixon_concept.png)
+
+## Physical Implementation
+
+The database was implemented using the _Code-First_ approach with Django ORM.
+
+### Analysis Table
+
+The main `videoanalysis` table stores processing metadata and statuses.
+![Analysis Table Structure](../../../../../assets/images-backend/analysis_table.png)
+
+### Results
+
+The `analysisresult` table links an analysis to a substance, storing the model's confidence. A `UNIQUE TOGETHER` constraint is applied to `(analysis_id, substance_id)` pairs.
+
+![Physical Database Model](../../../../../assets/images-backend/physical_db.png)

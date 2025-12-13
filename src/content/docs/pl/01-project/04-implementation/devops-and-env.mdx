@@ -1,0 +1,27 @@
+---
+title: Środowisko wytwórcze i CI/CD
+description: Strategia branchowania, konfiguracja Docker oraz automatyzacja wdrożeń (GitHub Actions)
+---
+
+## Środowisko wytwórcze i proces kontroli wersji
+
+Kod źródłowy systemu został zorganizowany w architekturze _multi-repo_, gdzie poszczególne komponenty systemu (backend, frontend, model ML, symulacja, serwis pacjentów, dokumentacja) znajdują się w oddzielnych repozytoriach na platformie GitHub.
+
+### Strategia branchowania i Code Review
+
+W projekcie zastosowano strategię _Feature Branch Workflow_. Główny branch `main` zawiera stabilną wersję produkcyjną kodu. Prace nad nowymi funkcjonalnościami odbywały się na dedykowanych branchach tworzonych od głównego.
+
+W celu zapewnienia wysokiej jakości kodu, wprowadzono proces _Code Review_. Scalenie zmian z głównym branchem wymagało mechanizmu _Pull Request_ (PR), spełniającego kryteria:
+
+- Akceptacji przynajmniej jednego innego członka zespołu.
+- Pozytywnego przejścia automatycznych testów w potoku CI.
+- Rozwiązania konfliktów w kodzie.
+
+### Ciągła integracja (CI/CD)
+
+Zaimplementowano zautomatyzowane potoki wdrażania (ang. _Pipelines_) z wykorzystaniem narzędzia **GitHub Actions**. Wdrożono następujące automatyzacje:
+
+- **Backend (Django):** Workflow `django.yml` przy każdym wypchnięciu zmian uruchamia środowisko Python, instaluje zależności oraz wykonuje testy jednostkowe. Deployment na Azure jest zautomatyzowany w osobnym pipeline.
+- **Frontend (Flutter):** Workflow `flutter_ci.yml` odpowiada za analizę statyczną kodu, testy oraz budowanie artefaktów (Web/Android).
+- **Symulacja (Unity):** Automatyczne budowanie projektu na platformy Linux, macOS, Windows i WebGL przez GitHub Releases.
+- **Serwis pacjentów:** Automatyczny deployment na Azure z wykorzystaniem **Terraform** (Infrastructure as Code) i konteneryzacji Docker.

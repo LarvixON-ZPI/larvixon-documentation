@@ -1,0 +1,27 @@
+---
+title: Dev Environment and CI/CD
+description: Branching strategy, Docker configuration, and deployment automation (GitHub Actions)
+---
+
+## Development Environment and Version Control
+
+The system source code is organized in a _multi-repo_ architecture, where individual system components (backend, frontend, ML model, simulation, patient service, documentation) reside in separate repositories on GitHub.
+
+### Branching Strategy and Code Review
+
+The project utilizes the _Feature Branch Workflow_. The main `main` branch contains the stable production version of the code. Work on new features is conducted on dedicated branches created from the main branch.
+
+To ensure high code quality, a _Code Review_ process was introduced. Merging changes into the main branch requires a _Pull Request_ (PR) that meets the following criteria:
+
+- Approval from at least one other team member.
+- Passing automatic tests in the CI pipeline.
+- Resolution of code conflicts.
+
+### Continuous Integration (CI/CD)
+
+Automated deployment pipelines were implemented using **GitHub Actions**. The following automations were deployed:
+
+- **Backend (Django):** The `django.yml` workflow sets up the Python environment, installs dependencies, and runs unit tests on every push. Deployment to Azure is automated in a separate pipeline.
+- **Frontend (Flutter):** The `flutter_ci.yml` workflow handles static code analysis, tests, and artifact building (Web/Android).
+- **Simulation (Unity):** Automatic building of the project for Linux, macOS, Windows, and WebGL platforms via GitHub Releases.
+- **Patient Service:** Automatic deployment to Azure using **Terraform** (Infrastructure as Code) and Docker containerization.

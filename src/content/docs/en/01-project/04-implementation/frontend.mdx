@@ -1,0 +1,43 @@
+---
+title: Frontend Implementation
+description: Flutter BLoC architecture, state management, and Unity simulation integration
+---
+
+## User Interface (Flutter)
+
+The application was built using a layered architecture with **Flutter 3.35.1**. Code is divided into functional modules (_feature-based_), such as `auth`, `analysis`, `settings`.
+
+### State Management (BLoC)
+
+The `flutter_bloc` library was utilized. Application state is immutable and based on classes extending `Equatable` to optimize view rendering.
+
+- **Events:** Events emitted by the UI (e.g., button clicks).
+- **States:** States returned by the BLoC (e.g., `Loading`, `Success`, `Error`).
+
+### API Error Handling
+
+A **Factory Method** pattern was implemented for error handling. The `ApiFailure` class maps HTTP codes (from the `dio` library) to domain errors, allowing for precise user messaging (e.g., form validation vs. server error).
+
+### Automatic Documentation
+
+The `dartdoc` tool was used to generate static HTML documentation based on code comments (Markdown).
+
+### Acceptance Testing
+
+Manual tests were conducted based on Test Cases, verifying:
+
+1.  Registration and data validation.
+2.  Video upload and handling of large files.
+3.  Interface responsiveness (Mobile vs. Desktop).
+
+## Simulation Implementation (Unity)
+
+The simulation (`larvixon-simulation` project) was integrated with the frontend using the _flutter_unity_widget_ plugin.
+
+### Larva Physics Algorithm
+
+The larva is modeled as 5 connected points. The movement algorithm is based on cyclic phases of changing the preferred distance between body segments (head-tail), simulating natural worm-like movement.
+
+### Behavioral Modifiers
+
+The influence of xenobiotics on larvae is implemented via the `MovementModifier` class. The algorithm calculates final movement parameters through linear interpolation between the normal state and the drugged state, taking into account the onset time (`onsetTime`) and duration (`duration`) of the effect.

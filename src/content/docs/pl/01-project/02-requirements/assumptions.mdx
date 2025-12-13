@@ -1,0 +1,38 @@
+---
+title: Założenia wstępne
+description: Grupa docelowa, wymagania sprzętowe, prawne (RODO) oraz ograniczenia technologiczne
+---
+
+Projekt systemu LarvixON został oparty na szeregu kluczowych założeń, wynikających zarówno z potrzeb biznesowych, specyfiki środowiska medycznego, jak i ograniczeń technologicznych związanych z przetwarzaniem obrazu oraz uczeniem maszynowym. Poniżej przedstawiono szczegółową charakterystykę przyjętych założeń.
+
+## Grupa docelowa i środowisko operacyjne
+
+Głównymi odbiorcami systemu są pracownicy laboratoriów diagnostycznych oraz personel medyczny szpitali (toksykolodzy, lekarze SOR). W związku z tym przyjęto następujące założenia dotyczące środowiska pracy:
+
+- **Dostępność wieloplatformowa:** System musi być dostępny zarówno na stacjonarnych stacjach roboczych w laboratoriach (przeglądarka internetowa), jak i na urządzeniach mobilnych (tablety/smartfony), umożliwiając szybki podgląd wyników przy łóżku pacjenta.
+- **Intuicyjność obsługi:** Interfejs użytkownika (UI) musi być maksymalnie uproszczony i czytelny, aby nie obciążać poznawczo personelu pracującego pod presją czasu.
+- **Model pracy:** System działa w architekturze klient-serwer, gdzie ciężkie obliczenia (wnioskowanie modelu ML) są delegowane do chmury, aby nie obciążać urządzeń końcowych użytkownika.
+
+## Założenia technologiczne i sprzętowe
+
+Ze względu na złożoność obliczeniową algorytmów analizy wideo oraz wymagania dotyczące skalowalności, przyjęto następujące założenia technologiczne:
+
+1.  **Jednolita baza kodu (frontend):** W celu optymalizacji procesu wytwórczego i utrzymania, aplikacja kliencka zostanie zrealizowana w technologii _Flutter_, co pozwoli na skompilowanie natywnych aplikacji na systemy Android/iOS oraz wersji Web z jednego kodu źródłowego.
+2.  **Akceleracja GPU (serwis ML):** Serwer odpowiedzialny za analizę wideo musi być wyposażony w karty graficzne (GPU) wspierające bibliotekę CUDA, co jest niezbędne do efektywnego działania modelu hybrydowego CNN+LSTM w rozsądnym czasie.
+3.  **Konteneryzacja:** Całość rozwiązania serwerowego (API, bazy danych, worker ML) zostanie osadzona w kontenerach _Docker_, co zapewni powtarzalność środowiska uruchomieniowego i łatwość wdrażania (CI/CD).
+
+## Założenia dotyczące danych wejściowych (Wideo)
+
+Skuteczność modelu diagnostycznego jest ściśle skorelowana z jakością dostarczonego materiału wideo. Przyjęto następujące założenia dla modułu analizy obrazu:
+
+- **Standaryzacja nagrania:** Materiał wideo musi przedstawiać szalkę Petriego sfilmowaną z góry ("lot ptaka"), z zachowaniem odpowiedniego oświetlenia eliminującego silne cienie, które mogłyby zostać błędnie zinterpretowane przez algorytm detekcji kształtów.
+- **Format danych:** System będzie obsługiwał format wideo `.mp4`, z ograniczeniem rozmiaru wideo do 3 GB (praktyczne ograniczenie wynikające z budżetu chmurowego).
+- **Model biologiczny:** System zakłada, że na nagraniu znajdują się larwy _Galleria mellonella_ w odpowiednim stadium rozwojowym, a ich reakcje ruchowe są wynikiem ekspozycji na badaną substancję.
+
+## Założenia prawne i bezpieczeństwo danych
+
+Ponieważ system przetwarza dane mogące posłużyć do identyfikacji pacjenta (w powiązaniu z wynikami badań), projekt uwzględnia rygorystyczne wymogi bezpieczeństwa:
+
+- **Zgodność z RODO:** System musi realizować zasady _Privacy by Design_. Dane osobowe pacjentów są przechowywane w oddzielnym mikroserwisie (Patient Service).
+- **Szyfrowanie:** Cała komunikacja sieciowa odbywa się kanałem szyfrowanym (HTTPS / TLS), a wrażliwe dane w bazie (np. hasła) są hashowane przy użyciu silnego algorytmu PBKDF2.
+- **Interoperacyjność:** Struktura danych pacjentów powinna być zgodna lub możliwa do mapowania na standardy medyczne takie jak HL7 FHIR, co umożliwi potencjalną integrację z systemami szpitalnymi w przyszłości.
