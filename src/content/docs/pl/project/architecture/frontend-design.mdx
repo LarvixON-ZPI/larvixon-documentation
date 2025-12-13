@@ -1,0 +1,36 @@
+---
+title: Projekt Frontend
+description: Architektura aplikacji Flutter, wzorzec BLoC, Clean Architecture oraz prototyp interfejsu.
+sidebar:
+  order: 4
+---
+
+## Architektura i technologie
+
+Aplikacja kliencka została zrealizowana we frameworku **Flutter** (wsparcie dla Web, Android, Windows). Zastosowano architekturę warstwową inspirowaną **Clean Architecture**:
+
+1.  **Data Layer**: Repozytoria, DTO, Dio (HTTP).
+2.  **Domain Layer**: Encje biznesowe.
+3.  **Presentation Layer**: UI oraz BLoC.
+
+![Komponenty frontend](../../../../../assets/images-frontend/frontend-componentsFrontendComponents.png)
+
+## Wzorce projektowe
+
+- **BLoC (Business Logic Component)**: Separacja logiki od UI, zarządzanie stanem.
+- **Repository**: Abstrakcja źródeł danych.
+- **Dependency Injection**: Zarządzanie zależnościami.
+- **Factory**: Tworzenie obiektów błędów (`ApiFailure`).
+
+## Prototyp interfejsu (Figma)
+
+Projekt interfejsu obejmował ekrany logowania, listy analiz oraz szczegółów badania.
+
+| Ekran            | Opis                                           |
+| :--------------- | :--------------------------------------------- |
+| **Lista analiz** | Siatka wykonanych badań z filtrowaniem.        |
+| **Szczegóły**    | Wykresy pewności detekcji i metadane pacjenta. |
+| **Kreator**      | Wieloetapowy proces zlecania nowej analizy.    |
+
+![Prototyp - Lista analiz](../../../../../assets/images-frontend/prototype-ui/home.png)
+![Prototyp - Szczegóły](../../../../../assets/images-frontend/prototype-ui/analysis-details.png)

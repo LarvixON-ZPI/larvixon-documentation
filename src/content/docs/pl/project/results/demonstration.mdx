@@ -1,8 +1,52 @@
 ---
-title: Wyniki i demonstracja
-description: Prezentacja workflow użytkownika, zrzuty ekranu z gotowej aplikacji i raporty z analiz
+title: Demonstracja systemu
+description: Przykładowy scenariusz użycia (workflow) od logowania do generowania raportu.
+sidebar:
+  order: 1
 ---
 
-## Wyniki i demonstracja
+Poniżej przedstawiono kompletny scenariusz realizacji zadania diagnostycznego przez zalogowanego użytkownika. Proces ten obejmuje autoryzację, zlecenie analizy wideo, monitorowanie jej statusu oraz interpretację otrzymanych wyników.
 
-Content coming soon...
+## Krok 1: Autoryzacja
+
+Proces rozpoczyna się na ekranie powitalnym. Jeżeli użytkownik korzystał już wcześniej z aplikacji, system automatycznie weryfikuje ważność przechowywanego lokalnie tokenu dostępu. W przypadku nowych sesji wymagane jest logowanie.
+
+![Ekran powitalny i logowanie](../../../../../assets/images-frontend/app-ui/landing.png)
+
+## Krok 2: Zlecenie nowej analizy
+
+Użytkownik inicjuje proces badawczy, uruchamiając wieloetapowy kreator.
+
+1.  **Przesłanie materiału wideo**: Wgranie pliku z nagraniem larw.
+2.  **Opis kliniczny**: Opcjonalne dodanie notatek.
+3.  **Wybór pacjenta**: Wyszukanie pacjenta po numerze PESEL.
+
+![Widok ekranu kreatora nowej analizy](../../../../../assets/new_analysis.png)
+
+## Krok 3: Monitorowanie postępu
+
+Po zatwierdzeniu formularza, nowe zlecenie pojawia się na liście analiz (Grid). Użytkownik widzi status przetwarzania (np. _Oczekujące_, _Przetwarzanie_, _Zakończono_).
+
+![Widok gridu analiz z nowym zadaniem](../../../../../assets/grid_waiting_for_result.png)
+
+## Krok 4: Wyniki i Raportowanie
+
+Po zakończeniu analizy przez model ML, użytkownik uzyskuje dostęp do szczegółów.
+
+### Metadane i podgląd
+
+Widok zawiera miniaturkę nagrania, dane pacjenta oraz status badania.
+
+![Miniaturka i dane pacjenta](../../../../../assets/redbull_miniature.png)
+
+### Wyniki detekcji
+
+Kluczowym elementem jest panel przedstawiający wykryte substancje toksyczne wraz z procentowym wskaźnikiem pewności predykcji modelu.
+
+![Rezultat obliczeń modelu ML](../../../../../assets/results_redbull.png)
+
+### Eksport raportu
+
+Użytkownik może wygenerować sformalizowany dokument PDF, gotowy do dołączenia do dokumentacji medycznej.
+
+![Wyeksportowany raport PDF](../../../../../assets/dr_mikolaj.png)

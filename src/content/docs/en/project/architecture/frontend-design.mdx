@@ -1,0 +1,36 @@
+---
+title: Frontend Design
+description: Flutter application architecture, BLoC pattern, Clean Architecture, and UI prototype.
+sidebar:
+  order: 4
+---
+
+## Architecture and Technologies
+
+The client application was built using the **Flutter** framework (supporting Web, Android, Windows). A layered architecture inspired by **Clean Architecture** was applied:
+
+1.  **Data Layer**: Repositories, DTOs, Dio (HTTP).
+2.  **Domain Layer**: Business entities.
+3.  **Presentation Layer**: UI and BLoC.
+
+![Frontend Components](../../../../../assets/images-frontend/frontend-componentsFrontendComponents.png)
+
+## Design Patterns
+
+- **BLoC (Business Logic Component)**: Separation of logic from UI, state management.
+- **Repository**: Data source abstraction.
+- **Dependency Injection**: Dependency management.
+- **Factory**: Creating error objects (`ApiFailure`).
+
+## UI Prototype (Figma)
+
+The interface design included login screens, analysis lists, and examination details.
+
+| Screen            | Description                                          |
+| :---------------- | :--------------------------------------------------- |
+| **Analysis List** | Grid of performed examinations with filtering.       |
+| **Details**       | Detection confidence charts and patient metadata.    |
+| **Wizard**        | Multi-step process for commissioning a new analysis. |
+
+![Prototype - Analysis List](../../../../../assets/images-frontend/prototype-ui/home.png)
+![Prototype - Details](../../../../../assets/images-frontend/prototype-ui/analysis-details.png)
