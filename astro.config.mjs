@@ -199,6 +199,13 @@ export default defineConfig({
                     pl: "Raport ZPI",
                   },
                 },
+                {
+                  label: "ZPI Documentation",
+                  link: "02-university/documents/documentation",
+                  translations: {
+                    pl: "Dokumentacja ZPI",
+                  },
+                },
               ],
               translations: {
                 pl: "Dokumenty",
