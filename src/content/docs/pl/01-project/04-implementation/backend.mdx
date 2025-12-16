@@ -20,8 +20,6 @@ larvixon-backend/
 |-- Dockerfile          # Definicja obrazu kontenera
 ```
 
-````
-
 ## Konfiguracja środowiska (Docker)
 
 Wykorzystano platformę **Docker** do zapewnienia spójności środowiska. Orkiestracja usług (Django, PostgreSQL, Redis, Celery Worker) odbywa się za pomocą **Docker Compose**.
@@ -63,4 +61,3 @@ Projekt implementuje warstwową strategię testowania z wykorzystaniem `pytest` 
 - **Testy asynchroniczne:** Mockowanie zadań Celery i zewnętrznych usług ML.
 
 Pokrycie kodu testami (_code coverage_) dla głównej logiki biznesowej wynosi ok. **78%**.
-````

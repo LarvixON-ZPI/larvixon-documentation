@@ -20,8 +20,6 @@ larvixon-backend/
 |-- Dockerfile          # Container image definition
 ```
 
-````
-
 ## Environment Configuration (Docker)
 
 **Docker** was used to ensure environment consistency. Service orchestration (Django, PostgreSQL, Redis, Celery Worker) is handled via **Docker Compose**.
@@ -63,5 +61,3 @@ The project implements a layered testing strategy using `pytest` and `unittest.m
 - **Asynchronous Tests:** Mocking Celery tasks and external ML services.
 
 Code coverage for the main business logic is approximately **78%**.
-
-````
